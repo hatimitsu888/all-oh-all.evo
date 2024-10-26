@@ -1,0 +1,47 @@
+{
+    "description": {
+        "text": "ALL-OH-ALL",
+        "color": "gold"
+    },
+    "supported_items": "#all_common:tools",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "all_common:block_click/"
+                },
+                "requirements": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "#all_common:all_blocks"
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "all_common:attention"
+                }
+            }
+        ]
+    }
+}

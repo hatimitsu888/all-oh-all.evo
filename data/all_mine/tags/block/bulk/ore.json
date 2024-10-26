@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#all_mine:ore/coal",
+        "#all_mine:ore/copper",
+        "#all_mine:ore/diamond",
+        "#all_mine:ore/emerald",
+        "#all_mine:ore/gold",
+        "#all_mine:ore/iron",
+        "#all_mine:ore/lapis",
+        "#all_mine:ore/redstone"
+    ]
+}

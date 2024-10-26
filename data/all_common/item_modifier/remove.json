@@ -1,0 +1,8 @@
+[
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "all_common:block_click": 0
+        }
+    }
+]
