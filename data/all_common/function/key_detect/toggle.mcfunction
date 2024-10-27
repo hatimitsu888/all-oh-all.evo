@@ -11,3 +11,6 @@ playsound minecraft:item.armor.equip_generic
 execute unless predicate all_common:have_ench run return run item modify entity @s weapon.mainhand all_common:set
 execute if predicate all_common:have_ench run item modify entity @s weapon.mainhand all_common:remove
 title @s actionbar {"text":""}
+
+#データをリセット
+function all_common:data_reset/

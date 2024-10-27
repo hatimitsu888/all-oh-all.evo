@@ -23,6 +23,23 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
+                    "function": "all_common:data_reset/"
+                },
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#all_common:all_blocks"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
                     "function": "all_common:block_click/"
                 },
                 "requirements": {

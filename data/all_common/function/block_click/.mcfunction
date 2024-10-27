@@ -1,11 +1,6 @@
 #> all_common:block_click/
 # ブロックを左クリックしたらブロックを特定する
 
-#マーカー召喚
-
-
-#データリセット
-data remove storage all: pos_data
 #初期化
 # tool: mine=1b cut=2b dig=3b collect=4b shears=5b
 data merge storage all: {\
@@ -13,9 +8,25 @@ data merge storage all: {\
         block_id: "",\
         tool: 0b,\
         root: "",\
-        branch: ""\
+        branch: "",\
+        x: 0,\
+        y: 0,\
+        z: 0\
     }\
 }
 
+#マーカー召喚
+summon marker ~ ~ ~ {Tags:["all.pos"]}
+#データ保存
+execute as @n[tag=all.pos] run function all_common:block_click/set_pos
+#マーカーキル
+kill @e[tag=all.pos]
+
 #ツール毎に処理を変える
 execute if items entity @s weapon.mainhand #all_common:pickaxes if block ~ ~ ~ #all_mine: run function all_mine:block_click/
+
+#データを保存
+function all_common:data_set/
+
+#データリセット
+data remove storage all: pos_data
