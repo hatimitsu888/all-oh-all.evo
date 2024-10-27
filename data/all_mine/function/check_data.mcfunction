@@ -5,7 +5,7 @@
 function all_common:data_get/
 
 #データが存在していれば一括破壊
-execute if data storage all: pos_data.tool
+execute if data storage all: pos_data.tool run function all_mine:mine/set_pos with storage all: pos_data
 
 #データリセット
 data remove storage all: pos_data
