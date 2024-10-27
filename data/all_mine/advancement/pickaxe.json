@@ -68,6 +68,6 @@
         }
     },
     "rewards": {
-        "function": "all_mine:score_reset"
+        "function": "all_mine:mined"
     }
 }
