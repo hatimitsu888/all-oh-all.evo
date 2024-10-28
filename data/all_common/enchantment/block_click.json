@@ -26,15 +26,38 @@
                     "function": "all_common:data_reset/"
                 },
                 "requirements": {
-                    "condition": "minecraft:inverted",
-                    "term": {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "#all_common:all_blocks"
-                            }
+                    "condition": "minecraft:any_of",
+                    "terms": [
+
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:pickaxes"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:inverted",
+                                    "term": {
+                                        "condition": "minecraft:location_check",
+                                        "predicate": {
+                                            "block": {
+                                                "blocks": "#all_mine:"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
-                    }
+
+                    ]
                 }
             },
             {
@@ -43,12 +66,35 @@
                     "function": "all_common:block_click/"
                 },
                 "requirements": {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "block": {
-                            "blocks": "#all_common:all_blocks"
+                    "condition": "minecraft:any_of",
+                    "terms": [
+
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:pickaxes"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "block": {
+                                            "blocks": "#all_mine:"
+                                        }
+                                    }
+                                }
+                            ]
                         }
-                    }
+
+                    ]
                 }
             }
         ],
