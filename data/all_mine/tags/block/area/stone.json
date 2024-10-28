@@ -1,7 +1,6 @@
 {
     "values": [
-        "minecraft:stone",
-        "minecraft:deepslate",
+        "#all_mine:stones",
         "minecraft:granite",
         "minecraft:diorite",
         "minecraft:andesite",

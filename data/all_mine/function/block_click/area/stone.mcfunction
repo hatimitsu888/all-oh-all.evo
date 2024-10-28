@@ -5,11 +5,8 @@
 data modify storage all: pos_data.branch set value "stone"
 
 #ブロック特定
-execute if block ~ ~ ~ minecraft:stone run data modify storage all: pos_data.block_id set value \
-"stone"
-
-execute if block ~ ~ ~ minecraft:deepslate run data modify storage all: pos_data.block_id set value \
-"deepslate"
+execute if block ~ ~ ~ #all_mine:stones run data modify storage all: pos_data.block_id set value \
+"stones"
 
 execute if block ~ ~ ~ minecraft:granite run data modify storage all: pos_data.block_id set value \
 "granite"
