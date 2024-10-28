@@ -10,3 +10,4 @@ execute if data storage all: pos_data{root:"area"} run function all_mine:mine/ar
 execute if data storage all: pos_data{root:"bulk"}
 
 #耐久値を減らす
+function all_common:all/break/set_damage/
