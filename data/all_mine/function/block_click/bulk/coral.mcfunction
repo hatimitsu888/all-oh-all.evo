@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/bulk/coral
 # マインオールのブロック特定(葉・珊瑚)
 
 #設定

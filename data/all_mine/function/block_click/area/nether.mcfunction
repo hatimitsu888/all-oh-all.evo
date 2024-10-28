@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/area/nether
 # マインオールのブロック特定(葉・ネザー)
 
 #設定

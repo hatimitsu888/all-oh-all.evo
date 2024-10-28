@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/area/ice
 # マインオールのブロック特定(葉・氷)
 
 #設定

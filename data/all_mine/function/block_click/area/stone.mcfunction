@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/area/stone
 # マインオールのブロック特定(葉・石)
 
 #設定

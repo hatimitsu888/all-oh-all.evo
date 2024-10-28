@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/area/amethyst
 # マインオールのブロック特定(葉・アメジスト)
 
 #設定

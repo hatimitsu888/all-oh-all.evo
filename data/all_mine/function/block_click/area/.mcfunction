@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/area/
 # マインオールのブロック特定(枝)
 
 #設定

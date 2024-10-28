@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/bulk/concrete
 # マインオールのブロック特定(葉・コンクリート)
 
 #設定

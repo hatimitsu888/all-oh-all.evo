@@ -1,4 +1,4 @@
-#> all_mine:block_click/
+#> all_mine:block_click/bulk/nether
 # マインオールのブロック特定(葉・ネザー鉱石)
 
 #設定
