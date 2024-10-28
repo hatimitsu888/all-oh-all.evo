@@ -15,6 +15,11 @@ scoreboard objectives add all.math dummy
 #掘った数を記録するスコア
 scoreboard objectives add all.break_cnt dummy
 
+#設定
+scoreboard objectives add all.settings dummy
+    #リミッター
+    execute unless score #all.limit all.settings matches -2147483648..2147483647 run scoreboard players set #all.limit all.settings 120
+
 #ツールで掘った時のスコア
 scoreboard objectives add all.tool.pickaxe.wood used:wooden_pickaxe
 scoreboard objectives add all.tool.pickaxe.stone used:stone_pickaxe
