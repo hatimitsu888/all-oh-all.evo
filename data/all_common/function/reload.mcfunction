@@ -42,3 +42,10 @@ scoreboard objectives add all.settings dummy
         scoreboard objectives add all.tool.shovel.gold used:golden_shovel
         scoreboard objectives add all.tool.shovel.diamond used:diamond_shovel
         scoreboard objectives add all.tool.shovel.netherite used:netherite_shovel
+    #クワ
+        scoreboard objectives add all.tool.hoe.wood used:wooden_hoe
+        scoreboard objectives add all.tool.hoe.stone used:stone_hoe
+        scoreboard objectives add all.tool.hoe.iron used:iron_hoe
+        scoreboard objectives add all.tool.hoe.gold used:golden_hoe
+        scoreboard objectives add all.tool.hoe.diamond used:diamond_hoe
+        scoreboard objectives add all.tool.hoe.netherite used:netherite_hoe

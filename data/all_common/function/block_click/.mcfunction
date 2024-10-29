@@ -26,6 +26,7 @@ kill @e[tag=all.pos]
 execute if items entity @s weapon.mainhand #all_common:pickaxes if block ~ ~ ~ #all_mine: run function all_mine:block_click/
 execute if items entity @s weapon.mainhand #all_common:axes if block ~ ~ ~ #all_cut: run function all_cut:block_click/
 execute if items entity @s weapon.mainhand #all_common:shovels if block ~ ~ ~ #all_dig: run function all_dig:block_click/
+execute if items entity @s weapon.mainhand #all_common:hoes if block ~ ~ ~ #all_collect: run function all_collect:block_click/
 
 #データを保存
 function all_common:data_set/
