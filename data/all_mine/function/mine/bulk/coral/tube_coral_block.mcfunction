@@ -36,7 +36,7 @@ execute as @e[tag=all.break_pos] run function all_common:all/bulk/kill
     execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ tube_coral_block run function all_common:all/bulk/summon
 
 #破壊
-execute at @e[tag=all.break_pos, distance=..1.5] run function all_common:all/break/
+execute at @e[tag=all.break_pos, distance=..1.75] run function all_common:all/break/
 
 #再帰
-execute if score #break_cnt all.break_cnt < #all.limit all.settings at @e[tag=all.break_pos, distance=..1.5] run function all_mine:mine/bulk/coral/tube_coral_block
+execute if score #break_cnt all.break_cnt < #all.limit all.settings at @e[tag=all.break_pos, distance=..1.75] run function all_mine:mine/bulk/coral/tube_coral_block
