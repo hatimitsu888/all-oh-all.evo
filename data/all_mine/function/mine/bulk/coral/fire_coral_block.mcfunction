@@ -1,4 +1,4 @@
-#> all_mine:mine/bulk/concrete/fire_coral_block
+#> all_mine:mine/bulk/coral/fire_coral_block
 # ミレポラサンゴブロック
 
 #削除

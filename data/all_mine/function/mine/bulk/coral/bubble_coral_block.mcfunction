@@ -1,4 +1,4 @@
-#> all_mine:mine/bulk/concrete/bubble_coral_block
+#> all_mine:mine/bulk/coral/bubble_coral_block
 # ミズタマサンゴブロック
 
 #削除

@@ -1,4 +1,4 @@
-#> all_mine:mine/bulk/concrete/horn_coral_block
+#> all_mine:mine/bulk/coral/horn_coral_block
 # シカツノサンゴブロック
 
 #削除

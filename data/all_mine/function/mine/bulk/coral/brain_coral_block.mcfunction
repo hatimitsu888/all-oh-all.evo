@@ -1,4 +1,4 @@
-#> all_mine:mine/bulk/concrete/brain_coral_block
+#> all_mine:mine/bulk/coral/brain_coral_block
 # ノウサンゴブロック
 
 #削除

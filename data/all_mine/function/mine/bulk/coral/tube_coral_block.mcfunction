@@ -1,4 +1,4 @@
-#> all_mine:mine/bulk/concrete/tube_coral_block
+#> all_mine:mine/bulk/coral/tube_coral_block
 # クダサンゴブロック
 
 #削除
