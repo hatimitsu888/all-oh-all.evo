@@ -1,4 +1,4 @@
-#> all_mine:block_click/score_reset
+#> all_mine:score_reset
 # ツールを使用した時のスコアをリセットする
 
 #スコアリセット
