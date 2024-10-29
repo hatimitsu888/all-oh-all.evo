@@ -1,0 +1,14 @@
+{
+    "values": [
+        "#all_cut:logs/oak",
+        "#all_cut:logs/spruce",
+        "#all_cut:logs/birch",
+        "#all_cut:logs/jungle",
+        "#all_cut:logs/acacia",
+        "#all_cut:logs/dark_oak",
+        "#all_cut:logs/mangrove",
+        "mangrove_roots",
+        "#all_cut:logs/cherry",
+        "#all_cut:bamboo_block"
+    ]
+}
