@@ -1,5 +1,5 @@
 #> all_mine:mine/bulk/nether/ancient_debris
-# ネザー金鉱石
+# 古代の残骸
 
 #削除
 execute as @e[tag=all.break_pos] run function all_common:all/bulk/kill

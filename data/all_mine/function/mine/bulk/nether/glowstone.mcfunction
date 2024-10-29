@@ -1,5 +1,5 @@
 #> all_mine:mine/bulk/nether/glowstone
-# ネザー金鉱石
+# グロウストーン
 
 #削除
 execute as @e[tag=all.break_pos] run function all_common:all/bulk/kill
