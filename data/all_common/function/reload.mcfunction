@@ -16,9 +16,11 @@ scoreboard objectives add all.math dummy
 scoreboard objectives add all.break_cnt dummy
 
 #設定
-scoreboard objectives add all.settings dummy
+scoreboard objectives add all.settings trigger
     #リミッター
     execute unless score #all.limit all.settings matches -2147483648..2147483647 run scoreboard players set #all.limit all.settings 120
+    #自動回収
+    execute unless score #all.auto_collect all.settings matches -2147483648..2147483647 run scoreboard players set #all.auto_collect all.settings 0
 
 #ツールで掘った時のスコア
     #ツルハシ
@@ -51,3 +53,6 @@ scoreboard objectives add all.settings dummy
         scoreboard objectives add all.tool.hoe.netherite used:netherite_hoe
     #はさみ
         scoreboard objectives add all.tool.shears used:shears
+
+#設定を表示
+execute as @a run function all_common:settings/show_button

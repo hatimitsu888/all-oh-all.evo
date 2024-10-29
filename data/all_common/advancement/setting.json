@@ -1,0 +1,83 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "#all.limit"
+                                        },
+                                        "score": "all.settings"
+                                    },
+                                    "range": {
+                                        "min": {
+                                            "type": "minecraft:score",
+                                            "target": {
+                                                "type": "minecraft:fixed",
+                                                "name": "#all.save.limit"
+                                            },
+                                            "score": "all.settings"
+                                        },
+                                        "max": {
+                                            "type": "minecraft:score",
+                                            "target": {
+                                                "type": "minecraft:fixed",
+                                                "name": "#all.save.limit"
+                                            },
+                                            "score": "all.settings"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "#all.auto_collect"
+                                        },
+                                        "score": "all.settings"
+                                    },
+                                    "range": {
+                                        "min": {
+                                            "type": "minecraft:score",
+                                            "target": {
+                                                "type": "minecraft:fixed",
+                                                "name": "#all.save.auto_collect"
+                                            },
+                                            "score": "all.settings"
+                                        },
+                                        "max": {
+                                            "type": "minecraft:score",
+                                            "target": {
+                                                "type": "minecraft:fixed",
+                                                "name": "#all.save.auto_collect"
+                                            },
+                                            "score": "all.settings"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "all_common:settings/"
+    }
+}

@@ -3,6 +3,7 @@
 
 #スコア
 scoreboard players set @s all.input_save 0
+scoreboard players enable @s all.settings
 
 #プレイヤーid
 scoreboard players operation @s all.player_id = #id_max all.player_id
