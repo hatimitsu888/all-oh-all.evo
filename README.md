@@ -11,8 +11,9 @@
 右の[Releases](https://github.com/hatimitsu888/all-oh-all.evo/releases)から最新バージョンをDLしてください。  
 # 使い方
 対応したツールを持ちながら【スニーク × 2回】をすると、一括破壊がオンになります。  
-[一人称](/Switch_1.webp)
-[三人称](/Switch_2.webp)
+![一人称](/Switch_1.webp)  
+![三人称](/Switch_2.webp)  
+その状態でブロックを掘ることで一括破壊が起動します。
 # 設定
 # 一括破壊できるブロック
 ## マインオール（つるはし）
