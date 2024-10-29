@@ -13,8 +13,5 @@ tellraw @s {"text":"-----------------------", "color":"gold"}
 scoreboard players operation #all.save.limit all.settings = #all.limit all.settings
 scoreboard players operation #all.save.auto_collect all.settings = #all.auto_collect all.settings
 
-#スコアリセット
-scoreboard players reset @s all.settings
-scoreboard players enable @s all.settings
 #進捗剥奪
 advancement revoke @s only all_common:setting
