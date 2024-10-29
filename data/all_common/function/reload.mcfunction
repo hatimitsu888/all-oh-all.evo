@@ -49,3 +49,5 @@ scoreboard objectives add all.settings dummy
         scoreboard objectives add all.tool.hoe.gold used:golden_hoe
         scoreboard objectives add all.tool.hoe.diamond used:diamond_hoe
         scoreboard objectives add all.tool.hoe.netherite used:netherite_hoe
+    #はさみ
+        scoreboard objectives add all.tool.shears used:shears

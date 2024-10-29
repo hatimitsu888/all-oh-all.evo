@@ -27,6 +27,7 @@ execute if items entity @s weapon.mainhand #all_common:pickaxes if block ~ ~ ~ #
 execute if items entity @s weapon.mainhand #all_common:axes if block ~ ~ ~ #all_cut: run function all_cut:block_click/
 execute if items entity @s weapon.mainhand #all_common:shovels if block ~ ~ ~ #all_dig: run function all_dig:block_click/
 execute if items entity @s weapon.mainhand #all_common:hoes if block ~ ~ ~ #all_collect: run function all_collect:block_click/
+execute if items entity @s weapon.mainhand #all_common:shears if block ~ ~ ~ #all_shears: run function all_shears:block_click/
 
 #データを保存
 function all_common:data_set/
