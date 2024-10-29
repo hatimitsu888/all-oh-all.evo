@@ -55,6 +55,60 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:axes"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:inverted",
+                                    "term": {
+                                        "condition": "minecraft:location_check",
+                                        "predicate": {
+                                            "block": {
+                                                "blocks": "#all_cut:"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:shovels"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:inverted",
+                                    "term": {
+                                        "condition": "minecraft:location_check",
+                                        "predicate": {
+                                            "block": {
+                                                "blocks": "#all_dig:"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
 
                     ]
@@ -88,6 +142,54 @@
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_mine:"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:axes"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "block": {
+                                            "blocks": "#all_cut:"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#all_common:shovels"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "block": {
+                                            "blocks": "#all_dig:"
                                         }
                                     }
                                 }
