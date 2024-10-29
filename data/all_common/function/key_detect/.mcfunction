@@ -5,4 +5,4 @@
 execute if score @s all.input_time matches 1.. run return run function all_common:key_detect/toggle
 
 #タイマーをスタート
-execute unless score @s all.input_time matches 1.. run scoreboard players set @s all.input_time 8
+execute unless score @s all.input_time matches 1.. run scoreboard players set @s all.input_time 10
