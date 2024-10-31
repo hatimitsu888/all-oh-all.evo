@@ -56,3 +56,6 @@ scoreboard objectives add all.settings trigger
 
 #設定を表示
 execute as @a run function all_common:settings/show_button
+
+#救済処置
+execute as @a run advancement revoke @s only all_common:tick

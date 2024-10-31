@@ -10,3 +10,6 @@ execute store success score @s all.input_save if predicate all_common:no_sneak
 
 #進捗剥奪
 advancement revoke @s only all_common:tick
+
+#進捗が剥奪されていなかったら
+execute if predicate all_common:advancements run function all_common:revoke
