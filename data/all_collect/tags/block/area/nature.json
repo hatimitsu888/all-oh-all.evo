@@ -1,6 +1,7 @@
 {
     "values": [
         "#all_collect:sculk",
-        "moss_block"
+        "moss_block",
+        "pale_moss_block"
     ]
 }

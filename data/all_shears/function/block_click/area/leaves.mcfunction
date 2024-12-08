@@ -34,3 +34,6 @@ execute if block ~ ~ ~ azalea_leaves run data modify storage all: pos_data.block
 
 execute if block ~ ~ ~ flowering_azalea_leaves run data modify storage all: pos_data.block_id set value \
 "flowering_azalea_leaves"
+
+execute if block ~ ~ ~ pale_oak_leaves run data modify storage all: pos_data.block_id set value \
+"pale_oak_leaves"

@@ -11,3 +11,4 @@ execute if data storage all: pos_data{block_id:"mangrove_leaves"} run function a
 execute if data storage all: pos_data{block_id:"cherry_leaves"} run function all_collect:collect/area/leaves/cherry_leaves
 execute if data storage all: pos_data{block_id:"azalea_leaves"} run function all_collect:collect/area/leaves/azalea_leaves
 execute if data storage all: pos_data{block_id:"flowering_azalea_leaves"} run function all_collect:collect/area/leaves/flowering_azalea_leaves
+execute if data storage all: pos_data{block_id:"pale_oak_leaves"} run function all_collect:collect/area/leaves/pale_oak_leaves

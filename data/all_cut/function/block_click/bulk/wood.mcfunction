@@ -35,3 +35,5 @@ execute if block ~ ~ ~ #all_cut:logs/cherry run data modify storage all: pos_dat
 execute if block ~ ~ ~ #all_cut:bamboo_block run data modify storage all: pos_data.block_id set value \
 "bamboo_block"
 
+execute if block ~ ~ ~ #all_cut:logs/pale_oak run data modify storage all: pos_data.block_id set value \
+"pale_oak"

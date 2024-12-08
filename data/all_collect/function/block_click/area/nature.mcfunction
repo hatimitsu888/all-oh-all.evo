@@ -11,3 +11,5 @@ execute if block ~ ~ ~ #all_collect:sculk run data modify storage all: pos_data.
 execute if block ~ ~ ~ moss_block run data modify storage all: pos_data.block_id set value \
 "moss_block"
 
+execute if block ~ ~ ~ pale_moss_block run data modify storage all: pos_data.block_id set value \
+"pale_moss_block"

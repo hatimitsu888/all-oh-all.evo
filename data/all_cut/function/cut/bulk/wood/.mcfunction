@@ -11,3 +11,4 @@ execute if data storage all: pos_data{block_id:"mangrove_log"} run function all_
 execute if data storage all: pos_data{block_id:"mangrove_roots"} run function all_cut:cut/bulk/wood/mangrove_roots
 execute if data storage all: pos_data{block_id:"cherry_log"} run function all_cut:cut/bulk/wood/cherry
 execute if data storage all: pos_data{block_id:"bamboo_block"} run function all_cut:cut/bulk/wood/bamboo
+execute if data storage all: pos_data{block_id:"pale_oak"} run function all_cut:cut/bulk/wood/pale_oak
