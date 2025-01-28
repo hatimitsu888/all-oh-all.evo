@@ -2,6 +2,7 @@
     "values": [
         "#all_cut:bulk/wood",
         "#all_cut:bulk/nether",
-        "#all_cut:bulk/crops"
+        "#all_cut:bulk/crops",
+        "#all_cut:bulk/misc"
     ]
 }
