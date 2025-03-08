@@ -7,4 +7,4 @@ scoreboard players set #durability all.break_cnt 0
 scoreboard players set #unbreaking_lvl all.break_cnt 0
 
 #エンチャント持ってたら
-execute if data entity @s SelectedItem.components."minecraft:enchantments".levels."minecraft:unbreaking" run function all_common:all/break/unbreaking/math
+execute if data entity @s SelectedItem.components."minecraft:enchantments"."minecraft:unbreaking" run function all_common:all/break/unbreaking/math
