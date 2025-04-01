@@ -1,6 +1,9 @@
 #> all_common:all/break/set_damage/
 # アイテムのダメージを加算する
 
+#不可壊が付いていたら処理しない
+execute if data entity @s SelectedItem.components."minecraft:unbreakable" run return 0
+
 #ダメージを取得
 execute store result score #now_damage all.math run data get entity @s SelectedItem.components."minecraft:damage" 1
 
