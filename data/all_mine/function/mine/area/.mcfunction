@@ -6,3 +6,4 @@ execute if data storage all: pos_data{branch:"ice"} run function all_mine:mine/a
 execute if data storage all: pos_data{branch:"nether"} run function all_mine:mine/area/nether/
 execute if data storage all: pos_data{branch:"stone"} run function all_mine:mine/area/stone/
 execute if data storage all: pos_data{branch:"terracotta"} run function all_mine:mine/area/terracotta/
+execute if data storage all: pos_data{branch:"end"} run function all_mine:mine/area/end/
