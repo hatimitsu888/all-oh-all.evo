@@ -13,3 +13,9 @@ execute if block ~ ~ ~ #all_mine:basalts run data modify storage all: pos_data.b
 
 execute if block ~ ~ ~ minecraft:blackstone run data modify storage all: pos_data.block_id set value \
 "blackstone"
+
+execute if block ~ ~ ~ minecraft:magma_block run data modify storage all: pos_data.block_id set value \
+"magma_block"
+
+execute if block ~ ~ ~ minecraft:nether_bricks run data modify storage all: pos_data.block_id set value \
+"nether_bricks"
