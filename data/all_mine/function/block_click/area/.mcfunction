@@ -9,3 +9,4 @@ execute if block ~ ~ ~ #all_mine:area/ice run function all_mine:block_click/area
 execute if block ~ ~ ~ #all_mine:area/nether run function all_mine:block_click/area/nether
 execute if block ~ ~ ~ #all_mine:area/stone run function all_mine:block_click/area/stone
 execute if block ~ ~ ~ #all_mine:area/terracotta run function all_mine:block_click/area/terracotta
+execute if block ~ ~ ~ #all_mine:area/end run function all_mine:block_click/area/end
