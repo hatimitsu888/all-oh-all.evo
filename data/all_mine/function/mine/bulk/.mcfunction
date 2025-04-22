@@ -5,6 +5,8 @@ execute if data storage all: pos_data{branch:"concrete"} run function all_mine:m
 execute if data storage all: pos_data{branch:"coral"} run function all_mine:mine/bulk/coral/
 execute if data storage all: pos_data{branch:"nether"} run function all_mine:mine/bulk/nether/
 execute if data storage all: pos_data{branch:"ore"} run function all_mine:mine/bulk/ore/
+execute if data storage all: pos_data{branch:"glass"} run function all_mine:mine/bulk/glass/
+execute if data storage all: pos_data{branch:"glass_pane"} run function all_mine:mine/bulk/glass_pane/
 
 #マーカーを削除
 execute as @e[tag=all.break_pos] run function all_common:all/bulk/kill

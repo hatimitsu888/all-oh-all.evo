@@ -8,3 +8,5 @@ execute if block ~ ~ ~ #all_mine:bulk/concrete run function all_mine:block_click
 execute if block ~ ~ ~ #all_mine:bulk/coral run function all_mine:block_click/bulk/coral
 execute if block ~ ~ ~ #all_mine:bulk/nether run function all_mine:block_click/bulk/nether
 execute if block ~ ~ ~ #all_mine:bulk/ore run function all_mine:block_click/bulk/ore
+execute if block ~ ~ ~ #all_mine:bulk/glass run function all_mine:block_click/bulk/glass
+execute if block ~ ~ ~ #all_mine:bulk/glass_pane run function all_mine:block_click/bulk/glass_pane
