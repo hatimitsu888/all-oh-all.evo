@@ -2,7 +2,6 @@
 # 進捗を剥奪
 
 advancement revoke @s only all_common:setting_btn
-advancement revoke @s only all_common:setting
 advancement revoke @s only all_common:tick
 advancement revoke @s only all_mine:pickaxe
 advancement revoke @s only all_cut:axe

@@ -23,6 +23,8 @@ scoreboard objectives add all.settings trigger
     execute unless score #all.auto_collect all.settings matches -2147483648..2147483647 run scoreboard players set #all.auto_collect all.settings 0
 #設定画面で使用するトリガー
 scoreboard objectives add all.settings.menu trigger
+# テキストをリセット
+data modify storage all: setting.menu.text set value ""
 
 #ツールで掘った時のスコア
     #ツルハシ
