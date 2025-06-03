@@ -6,11 +6,21 @@
         "color": "gold",
         "bold": true
     },
-    "body": {
-        "type": "minecraft:plain_message",
-        "contents": "v1.8"
-    },
-    "inputs": [],
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": "v1.8"
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "storage": "all:",
+                "nbt": "setting.menu.text",
+                "interpret": true,
+                "color": "green"
+            }
+        }
+    ],
     "can_close_with_escape": true,
     "pause": false,
     "after_action": "close",

@@ -19,6 +19,9 @@ execute if score @s all.settings.menu matches 30 run dialog show @s all_common:s
 # 一括破壊数上限の設定
 execute if score @s all.settings.menu matches 10000.. run function all_common:settings/dialog/limit/set
 
+# テキストをリセット
+data modify storage all: setting.menu.text set value {text: ""}
+
 # トリガーをリセット
 scoreboard players reset @s all.settings.menu
 scoreboard players enable @s all.settings.menu
