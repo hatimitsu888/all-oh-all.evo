@@ -17,3 +17,6 @@ execute if block ~ ~ ~ minecraft:ancient_debris run data modify storage all: pos
 execute if block ~ ~ ~ minecraft:glowstone run data modify storage all: pos_data.block_id set value \
 "glowstone"
 
+execute if block ~ ~ ~ minecraft:bone_block run data modify storage all: pos_data.block_id set value \
+"bone_block"
+

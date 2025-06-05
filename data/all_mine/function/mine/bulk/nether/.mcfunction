@@ -5,3 +5,4 @@ execute if data storage all: pos_data{block_id:"nether_quartz_ore"} run function
 execute if data storage all: pos_data{block_id:"nether_gold_ore"} run function all_mine:mine/bulk/nether/nether_gold_ore
 execute if data storage all: pos_data{block_id:"ancient_debris"} run function all_mine:mine/bulk/nether/ancient_debris
 execute if data storage all: pos_data{block_id:"glowstone"} run function all_mine:mine/bulk/nether/glowstone
+execute if data storage all: pos_data{block_id:"bone_block"} run function all_mine:mine/bulk/nether/bone_block
