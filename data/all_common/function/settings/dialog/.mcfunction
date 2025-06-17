@@ -23,8 +23,10 @@ execute if score @s all.settings.menu matches 10000.. run function all_common:se
 data modify storage all: setting.menu.text set value ""
 
 # トリガーをリセット
+scoreboard players operation #all.tmp all.settings.menu = @s all.settings.menu
 scoreboard players reset @s all.settings.menu
-scoreboard players enable @s all.settings.menu
+execute unless score #all.tmp all.settings.menu matches 1 run scoreboard players enable @s all.settings.menu
+scoreboard players reset #all.tmp all.settings.menu
 
 # 進捗剥奪
 advancement revoke @s only all_common:setting_menu

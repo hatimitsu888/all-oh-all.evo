@@ -25,7 +25,11 @@
     "pause": false,
     "after_action": "close",
     "exit_action": {
-        "label": "閉じる"
+        "label": "閉じる",
+        "action": {
+            "type": "run_command",
+            "command": "trigger all.settings.menu set 1"
+        }
     },
     "columns": 1,
     "actions": [
