@@ -68,7 +68,7 @@
             },
             "action": {
                 "type": "run_command",
-                "command": "dialog show @s all_common:settings"
+                "command": "function all_common:settings/dialog/menu/"
             }
         }
     ]
