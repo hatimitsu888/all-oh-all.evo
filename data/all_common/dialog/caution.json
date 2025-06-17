@@ -1,0 +1,75 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "All-oh-All.evo",
+        "color": "gold",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "本データパックの設定は\n"
+                },
+                {
+                    "text": "[OP権限]",
+                    "color": "gold"
+                },
+                {
+                    "text": "もしくは"
+                },
+                {
+                    "text": "[チートがオン]\n",
+                    "color": "gold"
+                },
+                {
+                    "text": "の状態のプレイヤーのみ開くことが出来ます。"
+                }
+            ],
+            "width": 300
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "データパックのお問い合わせはこちらからお願いします。\n"
+                },
+                {
+                    "text": "https://minecraft-mcworld.com/104988/",
+                    "color": "aqua",
+                    "underlined": true,
+                    "click_event": {
+                        "action": "open_url",
+                        "url": "https://minecraft-mcworld.com/104988/"
+                    },
+                    "hover_event": {
+                        "action": "show_text",
+                        "value": {
+                            "text": "クリックで「クラフターズコロニー」の配布ページへ飛びます。"
+                        }
+                    }
+                }
+            ],
+            "width": 300
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "pause": false,
+    "after_action": "close",
+    "exit_action": {
+        "label": "閉じる"
+    },
+    "actions": [
+        {
+            "label": {
+                "text": "設定を開く >"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "dialog show @s all_common:settings"
+            }
+        }
+    ]
+}
