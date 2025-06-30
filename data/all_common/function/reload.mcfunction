@@ -1,3 +1,6 @@
+#バージョン
+data modify storage all: setting.menu.version set value "1.9"
+
 #汎用スコア
 scoreboard objectives add all.dummy dummy
 #キーの入力受付時間

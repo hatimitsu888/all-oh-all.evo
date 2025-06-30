@@ -13,14 +13,14 @@ execute if score @s all.settings.menu matches 21 run function all_common:setting
 # 自動回収のオンオフ
 execute if score @s all.settings.menu matches 10..11 run function all_common:settings/dialog/auto_collect/set
 
-# 戻る
-execute if score @s all.settings.menu matches 30 run dialog show @s all_common:settings
-
 # 一括破壊数上限の設定
 execute if score @s all.settings.menu matches 10000.. run function all_common:settings/dialog/limit/set
 
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""
+
+# 戻る
+execute if score @s all.settings.menu matches 30 run function all_common:settings/dialog/menu/
 
 # トリガーをリセット
 scoreboard players operation #all.tmp all.settings.menu = @s all.settings.menu
