@@ -5,6 +5,11 @@
         "color": "gold",
         "bold": true
     },
+    "external_title": {
+        "text": "[管理者]All-oh-All.evo",
+        "color": "gold",
+        "bold": true
+    },
     "body": [
         {
             "type": "minecraft:plain_message",
