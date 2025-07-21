@@ -1,5 +1,5 @@
 #バージョン
-data modify storage all: setting.menu.version set value "1.9"
+data modify storage all: setting.menu.version set value "1.10"
 
 #汎用スコア
 scoreboard objectives add all.dummy dummy
@@ -24,8 +24,12 @@ scoreboard objectives add all.settings trigger
     execute unless score #all.limit all.settings matches -2147483648..2147483647 run scoreboard players set #all.limit all.settings 120
     #自動回収
     execute unless score #all.auto_collect all.settings matches -2147483648..2147483647 run scoreboard players set #all.auto_collect all.settings 0
+#プレイヤー固有の設定
+    #有効化
+    scoreboard objectives add all.activate dummy
 #設定画面で使用するトリガー
 scoreboard objectives add all.settings.menu trigger
+scoreboard objectives add all.settings.user_menu trigger
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""
 

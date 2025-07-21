@@ -4,7 +4,9 @@
 #スコア
 scoreboard players set @s all.input_save 0
 scoreboard players set @s all.settings 0
+scoreboard players set @s all.activate 0
 scoreboard players enable @s all.settings
+scoreboard players enable @s all.settings.user_menu
 
 #プレイヤーid
 scoreboard players operation @s all.player_id = #id_max all.player_id
