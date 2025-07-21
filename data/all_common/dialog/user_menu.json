@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "All-oh-All.evo",
+        "type": "text"
+    },
+    "can_close_with_escape": true,
+    "pause": false,
+    "after_action": "close",
+    "exit_action": {
+        "label": "閉じる",
+        "action": {
+            "type": "run_command",
+            "command": "trigger all.settings.user_menu set 1"
+        }
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": {
+                "text": "有効化の切り替え >"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger all.settings.user_menu set 10"
+            }
+        }
+    ]
+}
