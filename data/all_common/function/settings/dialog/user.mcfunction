@@ -11,7 +11,7 @@ execute if score @s all.settings.user_menu matches 10 run function all_common:se
 execute if score @s all.settings.user_menu matches 100..103 run function all_common:settings/dialog/activate/set
 
 # 戻る
-execute if score @s all.settings.user_menu matches 2 run function all_common:settings/dialog/menu/
+execute if score @s all.settings.user_menu matches 2 run function all_common:settings/dialog/user_menu/
 
 # トリガーをリセット
 scoreboard players reset @s all.settings.user_menu
