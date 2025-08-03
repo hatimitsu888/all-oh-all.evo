@@ -20,7 +20,7 @@
                 "type_specific": {
                     "type": "minecraft:player",
                     "advancements": {
-                        "all_common:setting": true
+                        "all_common:tick": true
                     }
                 }
             }
@@ -32,7 +32,19 @@
                 "type_specific": {
                     "type": "minecraft:player",
                     "advancements": {
-                        "all_common:tick": true
+                        "all_common:setting_menu": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "minecraft:player",
+                    "advancements": {
+                        "all_common:setting_user_menu": true
                     }
                 }
             }

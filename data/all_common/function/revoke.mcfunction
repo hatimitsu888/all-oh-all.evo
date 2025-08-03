@@ -3,6 +3,8 @@
 
 advancement revoke @s only all_common:setting_btn
 advancement revoke @s only all_common:tick
+advancement revoke @s only all_common:setting_menu
+advancement revoke @s only all_common:setting_user_menu
 advancement revoke @s only all_mine:pickaxe
 advancement revoke @s only all_cut:axe
 advancement revoke @s only all_dig:shovel
