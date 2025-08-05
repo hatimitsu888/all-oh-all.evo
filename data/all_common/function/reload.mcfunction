@@ -1,5 +1,5 @@
 #バージョン
-data modify storage all: setting.menu.version set value "1.11"
+data modify storage all: setting.menu.version set value "1.12"
 
 #汎用スコア
 scoreboard objectives add all.dummy dummy
