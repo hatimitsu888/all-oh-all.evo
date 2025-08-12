@@ -1,7 +1,17 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "advancements": {
+                            "all_common:disable_tick": false
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards": {
