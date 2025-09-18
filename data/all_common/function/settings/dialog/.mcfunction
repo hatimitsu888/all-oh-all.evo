@@ -1,9 +1,6 @@
 #> all_common:settings/dialog/
 # 設定画面で設定をしたときの処理
 
-# 設定画面を閉じる
-dialog clear @s
-
 # 一括破壊数上限の設定画面を開く
 execute if score @s all.settings.menu matches 20 run function all_common:settings/dialog/limit/open_set
 
@@ -27,6 +24,9 @@ data modify storage all: setting.menu.text set value ""
 
 # 戻る
 execute if score @s all.settings.menu matches 30 run function all_common:settings/dialog/menu/
+
+# とじる
+execute if score @s all.settings.menu matches 1 run dialog clear @s
 
 # トリガーをリセット
 scoreboard players operation #all.tmp all.settings.menu = @s all.settings.menu

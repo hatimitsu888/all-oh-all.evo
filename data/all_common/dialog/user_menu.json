@@ -1,12 +1,12 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "All-oh-All.evo",
+        "text": "All-oh-All.evo (個人設定)",
         "type": "text"
     },
     "can_close_with_escape": true,
     "pause": false,
-    "after_action": "close",
+    "after_action": "none",
     "exit_action": {
         "label": "閉じる",
         "action": {
