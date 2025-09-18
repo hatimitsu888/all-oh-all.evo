@@ -25,6 +25,10 @@ $dialog show @s {\
     columns:1,\
     actions:[\
         {\
+            label:{text:"ツールの有効化 >"},\
+            action:{type:"run_command",command:"trigger all.settings.menu set 23"}\
+        },\
+        {\
             label:{text:"一括破壊数上限 >"},\
             action:{type:"run_command",command:"trigger all.settings.menu set 20"}\
         },\

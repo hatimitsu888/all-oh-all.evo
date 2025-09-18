@@ -1,6 +1,9 @@
 #> all_common:settings/dialog/
 # 設定画面で設定をしたときの処理
 
+# ツール有効化の設定画面を開く
+execute if score @s all.settings.menu matches 23 run function all_common:settings/dialog/tool_activate/open_set
+
 # 一括破壊数上限の設定画面を開く
 execute if score @s all.settings.menu matches 20 run function all_common:settings/dialog/limit/open_set
 
@@ -17,7 +20,10 @@ execute if score @s all.settings.menu matches 10..11 run function all_common:set
 execute if score @s all.settings.menu matches 15..16 run function all_common:settings/dialog/tick/set
 
 # 一括破壊数上限の設定
-execute if score @s all.settings.menu matches 10000.. run function all_common:settings/dialog/limit/set
+execute if score @s all.settings.menu matches 10000..10002000 run function all_common:settings/dialog/limit/set
+
+# ツールの有効無効を設定
+execute if score @s all.settings.menu matches 20000000..20011111 run function all_common:settings/dialog/tool_activate/set
 
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""
