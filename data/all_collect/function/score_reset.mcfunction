@@ -4,6 +4,7 @@
 #スコアリセット
 scoreboard players reset @s all.tool.hoe.wood
 scoreboard players reset @s all.tool.hoe.stone
+scoreboard players reset @s all.tool.hoe.copper
 scoreboard players reset @s all.tool.hoe.iron
 scoreboard players reset @s all.tool.hoe.gold
 scoreboard players reset @s all.tool.hoe.diamond

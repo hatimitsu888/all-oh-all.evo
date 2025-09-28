@@ -29,6 +29,15 @@
                                 "condition": "minecraft:entity_scores",
                                 "entity": "this",
                                 "scores": {
+                                    "all.tool.hoe.copper": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
                                     "all.tool.hoe.iron": {
                                         "min": 1
                                     }

@@ -4,6 +4,7 @@
 #スコアリセット
 scoreboard players reset @s all.tool.pickaxe.wood
 scoreboard players reset @s all.tool.pickaxe.stone
+scoreboard players reset @s all.tool.pickaxe.copper
 scoreboard players reset @s all.tool.pickaxe.iron
 scoreboard players reset @s all.tool.pickaxe.gold
 scoreboard players reset @s all.tool.pickaxe.diamond

@@ -4,6 +4,7 @@
 #スコアリセット
 scoreboard players reset @s all.tool.shovel.wood
 scoreboard players reset @s all.tool.shovel.stone
+scoreboard players reset @s all.tool.shovel.copper
 scoreboard players reset @s all.tool.shovel.iron
 scoreboard players reset @s all.tool.shovel.gold
 scoreboard players reset @s all.tool.shovel.diamond

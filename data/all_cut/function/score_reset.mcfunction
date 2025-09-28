@@ -4,6 +4,7 @@
 #スコアリセット
 scoreboard players reset @s all.tool.axe.wood
 scoreboard players reset @s all.tool.axe.stone
+scoreboard players reset @s all.tool.axe.copper
 scoreboard players reset @s all.tool.axe.iron
 scoreboard players reset @s all.tool.axe.gold
 scoreboard players reset @s all.tool.axe.diamond

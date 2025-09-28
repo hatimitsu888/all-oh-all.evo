@@ -29,6 +29,15 @@
                                 "condition": "minecraft:entity_scores",
                                 "entity": "this",
                                 "scores": {
+                                    "all.tool.shovel.copper": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
                                     "all.tool.shovel.iron": {
                                         "min": 1
                                     }
