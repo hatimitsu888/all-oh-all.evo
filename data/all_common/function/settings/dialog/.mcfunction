@@ -10,14 +10,8 @@ execute if score @s all.settings.menu matches 20 run function all_common:setting
 # 自動回収の設定画面を開く
 execute if score @s all.settings.menu matches 21 run function all_common:settings/dialog/auto_collect/open_set
 
-# 常時実行方式の設定画面を開く
-execute if score @s all.settings.menu matches 22 run function all_common:settings/dialog/tick/open_set
-
 # 自動回収のオンオフ
 execute if score @s all.settings.menu matches 10..11 run function all_common:settings/dialog/auto_collect/set
-
-# 常時実行方式の変更
-execute if score @s all.settings.menu matches 15..16 run function all_common:settings/dialog/tick/set
 
 # 一括破壊数上限の設定
 execute if score @s all.settings.menu matches 10000..10002000 run function all_common:settings/dialog/limit/set

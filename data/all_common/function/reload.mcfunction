@@ -24,8 +24,6 @@ scoreboard objectives add all.settings trigger
     execute unless score #all.limit all.settings matches -2147483648..2147483647 run scoreboard players set #all.limit all.settings 120
     #自動回収
     execute unless score #all.auto_collect all.settings matches -2147483648..2147483647 run scoreboard players set #all.auto_collect all.settings 0
-    #常時実行の設定
-    execute unless score #all.tick all.settings matches -2147483648..2147483647 run scoreboard players set #all.tick all.settings 0
     #一括破壊の有効/無効
     execute unless data storage all: setting.tools run data modify storage all: setting.tools set value {cut:true, mine:true, dig:true, shears:true, collect:true}
 #プレイヤー固有の設定
@@ -77,9 +75,6 @@ data modify storage all: setting.menu.text set value ""
         scoreboard objectives add all.tool.hoe.netherite used:netherite_hoe
     #はさみ
         scoreboard objectives add all.tool.shears used:shears
-
-#設定を表示
-execute as @a run function all_common:settings/show_button
 
 #救済処置
 execute as @a run advancement revoke @s only all_common:tick

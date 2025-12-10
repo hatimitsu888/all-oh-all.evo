@@ -35,10 +35,6 @@ $dialog show @s {\
         {\
             label:{text:"自動回収 >"},\
             action:{type:"run_command",command:"trigger all.settings.menu set 21"}\
-        },\
-        {\
-            label:{text:"常時実行方式 >"},\
-            action:{type:"run_command",command:"trigger all.settings.menu set 22"}\
         }\
     ]\
 }
