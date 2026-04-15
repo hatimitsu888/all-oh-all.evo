@@ -5,8 +5,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_common:setting_btn": true
                     }
@@ -17,8 +16,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_common:tick": true
                     }
@@ -29,8 +27,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_common:setting_menu": true
                     }
@@ -41,8 +38,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_common:setting_user_menu": true
                     }
@@ -53,8 +49,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_mine:pickaxe": true
                     }
@@ -65,8 +60,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_cut:axe": true
                     }
@@ -77,8 +71,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_dig:shovel": true
                     }
@@ -89,8 +82,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_collect:hoe": true
                     }
@@ -101,8 +93,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "advancements": {
                         "all_shears:shears": true
                     }
