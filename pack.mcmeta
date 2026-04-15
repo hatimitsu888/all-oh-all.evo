@@ -1,7 +1,7 @@
 {
     "pack": {
-        "description": "all-oh-all.Evo 26.1(v1.17)",
-        "min_format": [101, 1],
-        "max_format": [101, 1]
+        "description": "all-oh-all.Evo 26.2(v2.0)",
+        "min_format": [102, 0],
+        "max_format": [102, 0]
     }
 }
