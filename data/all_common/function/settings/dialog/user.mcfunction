@@ -4,8 +4,16 @@
 # 有効化の設定画面を開く
 execute if score @s all.settings.user_menu matches 10 run function all_common:settings/dialog/activate/open_set
 
+# プリセット設定画面を開く
+execute if score @s all.settings.user_menu matches 11 run function all_common:settings/dialog/preset/open_set
+
 # 有効化の切り替え
 execute if score @s all.settings.user_menu matches 100..103 run function all_common:settings/dialog/activate/set
+
+# プリセットの変更
+    #211～255：形状変更  300～301：ページ切り替え  1000～10000：奥行き
+execute if score @s all.settings.user_menu matches 211..301 run function all_common:settings/dialog/preset/set
+execute if score @s all.settings.user_menu matches 1000..10000 run function all_common:settings/dialog/preset/close
 
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""

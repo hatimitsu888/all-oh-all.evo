@@ -23,6 +23,10 @@ $dialog show @s {\
         {\
             label:{text:"有効化の切り替え >"},\
             action:{type:"run_command",command:"trigger all.settings.user_menu set 10"}\
+        },\
+        {\
+            label:{text:"プリセットの変更 >"},\
+            action:{type:"run_command",command:"trigger all.settings.user_menu set 11"}\
         }\
     ]\
 }
