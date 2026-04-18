@@ -6,11 +6,6 @@
             "input": {
                 "sneak": false
             }
-        },
-        "equipment": {
-            "mainhand": {
-                "items": "#all_common:tools"
-            }
         }
     }
 }

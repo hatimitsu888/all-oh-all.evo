@@ -6,6 +6,7 @@ scoreboard players set @s all.input_save 0
 scoreboard players set @s all.settings 0
 scoreboard players set @s all.activate 0
 scoreboard players set @s all.preset 0
+scoreboard players set @s all.rotation -7
 scoreboard players enable @s all.settings
 scoreboard players enable @s all.settings.user_menu
 
@@ -39,6 +40,3 @@ data modify storage all: player append value {}
         [-1, -1, -1, -1, -1],\
         [-1, -1, -1, -1, -1]\
     ]}
-
-#プリセット
-data modify storage all: player[-1].preset.select set value "A"

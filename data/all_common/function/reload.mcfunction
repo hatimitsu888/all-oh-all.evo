@@ -18,6 +18,11 @@ scoreboard objectives add all.math dummy
 #掘った数を記録するスコア
 scoreboard objectives add all.break_cnt dummy
 
+#角度を記録するスコア
+scoreboard objectives add all.rotation dummy
+scoreboard objectives add all.rot_before dummy
+scoreboard objectives add all.rot_after dummy
+
 #設定
 scoreboard objectives add all.settings trigger
     #リミッター
