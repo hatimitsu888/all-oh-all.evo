@@ -5,4 +5,4 @@
 data remove storage all: tmp.get
 
 #データに代入
-$data modify storage all: player[$(player_id)] set from storage all: pos_data
+$data modify storage all: player[$(player_id)] merge from storage all: pos_data
