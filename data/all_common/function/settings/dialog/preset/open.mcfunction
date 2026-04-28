@@ -9,56 +9,171 @@ $dialog show @s {\
     "body": {\
         "type": "minecraft:plain_message",\
         "contents": [\
-            {\
-                "text": ""\
-            },\
-            {\
-                "text": "◀",\
-                "click_event": {\
-                    "action": "run_command",\
-                    "command": "trigger all.settings.user_menu set 300"\
+            [\
+                {\
+                    "text": ""\
                 },\
-                "hover_event": {\
-                    "action": "show_text",\
-                    "value": "クリックで切り替え"\
-                }\
-            },\
-            "  ",\
-            "プリセット：",\
-            "$(preset)",\
-            "  ",\
-            {\
-                "text": "▶",\
-                "click_event": {\
-                    "action": "run_command",\
-                    "command": "trigger all.settings.user_menu set 301"\
+                {\
+                    "text": "◀",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 300"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "クリックで切り替え"\
+                    }\
                 },\
-                "hover_event": {\
-                    "action": "show_text",\
-                    "value": "クリックで切り替え"\
+                "  ",\
+                "プリセット：",\
+                "$(preset)",\
+                "  ",\
+                {\
+                    "text": "▶",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 301"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "クリックで切り替え"\
+                    }\
                 }\
-            }\
+            ],\
+            "\n------------------------------\n",\
+            [\
+                "奥行き：",\
+                {\
+                    "text": "█",\
+                    "color": "green",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 401"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "1"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r2)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 402"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "2"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r3)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 403"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "3"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r4)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 404"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "4"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r5)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 405"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "5"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r6)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 406"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "6"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r7)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 407"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "7"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r8)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 408"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "8"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r9)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 409"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "9"\
+                    }\
+                },\
+                {\
+                    "text": "█",\
+                    "color": "$(r10)",\
+                    "click_event": {\
+                        "action": "run_command",\
+                        "command": "trigger all.settings.user_menu set 410"\
+                    },\
+                    "hover_event": {\
+                        "action": "show_text",\
+                        "value": "10"\
+                    }\
+                }\
+            ]\
         ]\
     },\
-    "inputs": [\
-        {\
-            "type": "minecraft:number_range",\
-            "key": "range",\
-            "label": "奥行き",\
-            "start": 1,\
-            "end": 10,\
-            "step": 1,\
-            "initial": $(range)\
-        }\
-    ],\
     "can_close_with_escape": true,\
     "after_action": "none",\
     "pause": false,\
     "exit_action": {\
         "label": "決定",\
         "action": {\
-            "type": "minecraft:dynamic/run_command",\
-            "template": "trigger all.settings.user_menu set $(text)000"\
+            "type": "minecraft:run_command",\
+            "command": "trigger all.settings.user_menu set 302"\
         }\
     },\
     "columns": 5,\

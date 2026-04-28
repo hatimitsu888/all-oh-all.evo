@@ -11,9 +11,10 @@ execute if score @s all.settings.user_menu matches 11 run function all_common:se
 execute if score @s all.settings.user_menu matches 100..103 run function all_common:settings/dialog/activate/set
 
 # プリセットの変更
-    #211～255：形状変更  300～301：ページ切り替え  1000～10000：奥行き
+    #211～255：形状変更  300～301：ページ切り替え  401～410：奥行き　302：閉じる
 execute if score @s all.settings.user_menu matches 211..301 run function all_common:settings/dialog/preset/set
-execute if score @s all.settings.user_menu matches 1000..10000 run function all_common:settings/dialog/preset/close
+execute if score @s all.settings.user_menu matches 401..410 run function all_common:settings/dialog/preset/range_set
+execute if score @s all.settings.user_menu matches 302 run function all_common:settings/dialog/preset/close
 
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""

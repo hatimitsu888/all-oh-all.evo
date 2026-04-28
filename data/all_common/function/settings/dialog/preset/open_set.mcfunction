@@ -1,9 +1,6 @@
 #> all_common:settings/dialog/preset/open_set
 # ダイアログの設定
 
-#テキストを設定
-data modify storage all: setting.tmp.text set value "$(range)"
-
 #データを取得
 function all_common:data_get/
 

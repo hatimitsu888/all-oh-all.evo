@@ -16,10 +16,26 @@ scoreboard players set #all.B all.math 0
 data modify storage all: setting.tmp merge value {A:0, B:0}
 function all_common:settings/dialog/preset/set_color with storage all: setting.tmp
 
+
+#長さ
+$execute store result score #all.A all.math run data get storage all: pos_data.preset.$(preset).range
+
+#初期化
+data modify storage all: setting.tmp merge value {r2:"dark_gray",r3:"dark_gray",r4:"dark_gray",r5:"dark_gray",r6:"dark_gray",r7:"dark_gray",r8:"dark_gray",r9:"dark_gray",r10:"dark_gray",}
+
+#色を設定
+execute if score #all.A all.math matches 2 run data modify storage all: setting.tmp merge value {r2:"green"}
+execute if score #all.A all.math matches 3 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green"}
+execute if score #all.A all.math matches 4 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green"}
+execute if score #all.A all.math matches 5 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green"}
+execute if score #all.A all.math matches 6 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green",r6:"green"}
+execute if score #all.A all.math matches 7 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green",r6:"green",r7:"green"}
+execute if score #all.A all.math matches 8 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green",r6:"green",r7:"green",r8:"green"}
+execute if score #all.A all.math matches 9 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green",r6:"green",r7:"green",r8:"green",r9:"green"}
+execute if score #all.A all.math matches 10 run data modify storage all: setting.tmp merge value {r2:"green",r3:"green",r4:"green",r5:"green",r6:"green",r7:"green",r8:"green",r9:"green",r10:"green"}
+
+
 #リセット
 scoreboard players reset #all.A all.math
 scoreboard players reset #all.B all.math
 scoreboard players reset #all.C all.math
-
-#長さ
-$data modify storage all: setting.tmp.range set from storage all: pos_data.preset.$(preset).range
