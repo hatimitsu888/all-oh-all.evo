@@ -21,7 +21,3 @@ execute if entity @s[x_rotation=-90.0..-45.0] if entity @p[tag=all.this,y_rotati
 execute if entity @s[x_rotation=-90.0..-45.0] if entity @p[tag=all.this,y_rotation=45.0..135.0] run data modify storage all: pos_data.facing set value "wu"
 execute if entity @s[x_rotation=-90.0..-45.0] if entity @p[tag=all.this,y_rotation=-45.0..45.0] run data modify storage all: pos_data.facing set value "su"
 execute if entity @s[x_rotation=-90.0..-45.0] if entity @p[tag=all.this,y_rotation=-135.0..-45.0] run data modify storage all: pos_data.facing set value "eu"
-
-
-
-tellraw @a {nbt:"pos_data.facing",storage:"all:"}
