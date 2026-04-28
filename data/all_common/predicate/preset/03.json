@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "all:",
+        "path": "tmp.preset.shape[0][3]"
+    },
+    "range": 1
+}
