@@ -16,3 +16,6 @@ execute if data storage all: pos_data{root:"bulk"} if predicate all_common:activ
 
 #耐久値を減らす
 function all_common:all/break/set_damage/
+
+#リセット
+data remove storage all: break.option
