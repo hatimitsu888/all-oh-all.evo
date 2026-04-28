@@ -15,7 +15,7 @@ $execute if predicate all_common:preset/14 positioned ^-2 ^1 ^ if block ~ ~ ~ $(
 
 $execute if predicate all_common:preset/20 positioned ^2 ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
 $execute if predicate all_common:preset/21 positioned ^1 ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
-$execute if predicate all_common:preset/21 positioned ^ ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
+$execute positioned ^ ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
 $execute if predicate all_common:preset/23 positioned ^-1 ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
 $execute if predicate all_common:preset/24 positioned ^-2 ^ ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
 
