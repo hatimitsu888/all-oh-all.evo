@@ -1,33 +1,8 @@
 #> all_mine:mine/area/nether/netherracks
 # ネザーラック
 
-#下
-    execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~-1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~-1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~-1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-#中
-    execute positioned ~1 ~ ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~ ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~ ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~ ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    #真ん中はナシ
-    execute positioned ~ ~ ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~ ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~ ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-#上
-    execute positioned ~1 ~1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~ ~1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~1 ~ if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
-    execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #all_mine:netherracks run function all_common:all/break/
+#設定
+data modify storage all: area.block_id set value "#all_mine:netherracks"
+
+#破壊
+function all_common:area_break/
