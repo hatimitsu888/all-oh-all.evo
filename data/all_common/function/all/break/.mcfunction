@@ -22,3 +22,7 @@ tag @n[tag=all.mined_item] remove all.mined_item
 
 #ブロック削除
 setblock ~ ~ ~ air replace
+
+#オプション
+execute if data storage all: {break:{option:"ice"}} run function all_common:all/break/options/ice
+execute if data storage all: {break:{option:"xp"}} run function all_common:all/xp/
