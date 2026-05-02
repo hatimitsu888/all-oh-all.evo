@@ -15,9 +15,9 @@ scoreboard players operation @s all.rot_before = @s all.rot_after
 
 
 #角度によってプリセットを変える
-execute if score @s all.rotation matches -7..-3 run title @s subtitle ["",{text:">A<",color:green},"\s","\sB\s","\s","\sC\s"]
-execute if score @s all.rotation matches -2..2 run title @s subtitle ["","\sA\s","\s",{text:">B<",color:green},"\s","\sC\s"]
-execute if score @s all.rotation matches 3..7 run title @s subtitle ["","\sA\s","\s","\sB\s","\s",{text:">C<",color:green}]
+execute if score @s all.rotation matches -7..-3 run title @s subtitle ["",{text:">A<",color:green,bold:true},"\s","\sB\s","\s","\sC\s"]
+execute if score @s all.rotation matches -2..2 run title @s subtitle ["","\sA\s","\s",{text:">B<",color:green,bold:true},"\s","\sC\s"]
+execute if score @s all.rotation matches 3..7 run title @s subtitle ["","\sA\s","\s","\sB\s","\s",{text:">C<",color:green,bold:true}]
 
 #表示
 title @s times 0 2 0
