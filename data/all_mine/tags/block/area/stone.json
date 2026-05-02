@@ -8,6 +8,7 @@
         "minecraft:obsidian",
         "minecraft:sandstone",
         "minecraft:dripstone_block",
-        "minecraft:sulfur"
+        "minecraft:sulfur",
+        "minecraft:cinnabar"
     ]
 }

@@ -10,3 +10,4 @@ execute if data storage all: pos_data{block_id:"obsidian"} run function all_mine
 execute if data storage all: pos_data{block_id:"sandstone"} run function all_mine:mine/area/stone/sandstone
 execute if data storage all: pos_data{block_id:"dripstone"} run function all_mine:mine/area/stone/dripstone
 execute if data storage all: pos_data{block_id:"sulfur"} run function all_mine:mine/area/stone/sulfur
+execute if data storage all: pos_data{block_id:"cinnabar"} run function all_mine:mine/area/stone/cinnabar

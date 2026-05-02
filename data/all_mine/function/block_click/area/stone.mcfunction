@@ -31,3 +31,6 @@ execute if block ~ ~ ~ minecraft:dripstone_block run data modify storage all: po
 
 execute if block ~ ~ ~ minecraft:sulfur run data modify storage all: pos_data.block_id set value \
 "sulfur"
+
+execute if block ~ ~ ~ minecraft:cinnabar run data modify storage all: pos_data.block_id set value \
+"cinnabar"
