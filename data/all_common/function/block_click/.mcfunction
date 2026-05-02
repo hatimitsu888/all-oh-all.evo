@@ -1,6 +1,9 @@
 #> all_common:block_click/
 # ブロックを左クリックしたらブロックを特定する
 
+#データ取得
+function all_common:data_get/
+
 #初期化
 # tool: mine=1b cut=2b dig=3b collect=4b shears=5b
 data merge storage all: {\
