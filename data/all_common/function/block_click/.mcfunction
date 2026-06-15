@@ -1,6 +1,14 @@
 #> all_common:block_click/
 # ブロックを左クリックしたらブロックを特定する
 
+# 無効化されている場合は処理を行わない
+execute if score @s all.activate matches 3 run return 0
+execute if items entity @s weapon.mainhand #all_common:pickaxes if data storage all: {setting:{tools:{mine:false}}} run return 0
+execute if items entity @s weapon.mainhand #all_common:axes if data storage all: {setting:{tools:{cut:false}}} run return 0
+execute if items entity @s weapon.mainhand #all_common:shovels if data storage all: {setting:{tools:{dig:false}}} run return 0
+execute if items entity @s weapon.mainhand #all_common:hoes if data storage all: {setting:{tools:{collect:false}}} run return 0
+execute if items entity @s weapon.mainhand #all_common:shears if data storage all: {setting:{tools:{shears:false}}} run return 0
+
 #データ取得
 function all_common:data_get/
 

@@ -1,20 +1,14 @@
 #> all_common:block_click/surface/
 # クリックしたブロックの面を検知する
 
+# 設定で範囲採掘が無効化されている場合は処理を行わない
+execute if score @s all.activate matches 1 run return 0
+
 #プレイヤータグ付け
 tag @s add all.this
 
-#プレイヤーの位置にエンティティを召喚
-summon text_display ~ ~ ~ {Tags:["all.surface"]}
-execute at @s anchored eyes run tp @n[tag=all.surface] ^ ^ ^ ~ ~
-
-#スコア定義
-scoreboard players set #all.surface all.math 0
-
-#再帰でエンティティをブロックに近づける
-execute as @n[tag=all.surface] at @s if function all_common:block_click/surface/0_with run function all_common:block_click/surface/0 with storage all: pos_data
-execute as @n[tag=all.surface] at @s if function all_common:block_click/surface/1_with run function all_common:block_click/surface/1 with storage all: pos_data
-execute as @n[tag=all.surface] at @s run function all_common:block_click/surface/2 with storage all: pos_data
+# るびさんのレイキャストで視線先ブロックの表面を特定
+execute at @s run function #ruby.raycast:16m
 
 #ブロックの中心を見る
 execute as @n[tag=all.surface] at @s run tp @s ~ ~ ~ facing entity @n[tag=all.pos]
