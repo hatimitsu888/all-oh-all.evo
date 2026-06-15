@@ -7,8 +7,14 @@ execute if score @s all.settings.user_menu matches 12 run function all_common:se
 # 有効化の設定画面を開く
 execute if score @s all.settings.user_menu matches 10 run function all_common:settings/dialog/activate_user/open_set
 
+# プリセット機能の有効/無効を設定する
+execute if score @s all.settings.user_menu matches 13 run function all_common:settings/dialog/preset_activate/open_set
+
 # プリセット設定画面を開く
 execute if score @s all.settings.user_menu matches 11 run function all_common:settings/dialog/preset/open_set
+
+# プリセット機能の有効化
+execute if score @s all.settings.user_menu matches 20..21 run function all_common:settings/dialog/preset_activate/set
 
 # ツールの有効化
 execute if score @s all.settings.user_menu matches 10000..111111 run function all_common:settings/dialog/tool_activate_user/set

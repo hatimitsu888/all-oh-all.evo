@@ -8,6 +8,8 @@ scoreboard objectives remove all.input_save
 scoreboard objectives remove all.player_id
 scoreboard objectives remove all.math
 scoreboard objectives remove all.break_cnt
+scoreboard objectives remove all.preset
+scoreboard objectives remove all.preset_activate
 scoreboard objectives remove all.settings
 scoreboard objectives remove all.settings.menu
 scoreboard objectives remove all.settings.user_menu

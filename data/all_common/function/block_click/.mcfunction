@@ -49,7 +49,7 @@ execute if items entity @s weapon.mainhand #all_common:shears if block ~ ~ ~ #al
 
 
 #範囲採掘の場合、クリックしたブロックの表面を取得
-execute if data storage all: pos_data{root: "area"} run function all_common:block_click/surface/
+execute if data storage all: pos_data{root: "area"} if score @s all.preset_activate matches 1 run function all_common:block_click/surface/
 
 
 #マーカーキル

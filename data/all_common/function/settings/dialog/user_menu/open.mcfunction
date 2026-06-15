@@ -29,6 +29,10 @@ $dialog show @s {\
             action:{type:"run_command",command:"trigger all.settings.user_menu set 10"}\
         },\
         {\
+            label:{text:"プリセット機能の有効化 >"},\
+            action:{type:"run_command",command:"trigger all.settings.user_menu set 13"}\
+        },\
+        {\
             label:{text:"プリセットの変更 >"},\
             action:{type:"run_command",command:"trigger all.settings.user_menu set 11"}\
         }\

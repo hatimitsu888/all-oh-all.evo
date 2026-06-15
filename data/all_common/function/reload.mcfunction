@@ -36,6 +36,8 @@ scoreboard objectives add all.settings trigger
 #プレイヤー固有の設定
     #プリセット
     scoreboard objectives add all.preset dummy
+    #プリセットの有効化
+    scoreboard objectives add all.preset_activate dummy
 #設定画面で使用するトリガー
 scoreboard objectives add all.settings.menu trigger
 scoreboard objectives add all.settings.user_menu trigger

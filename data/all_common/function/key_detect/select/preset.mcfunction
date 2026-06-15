@@ -1,6 +1,9 @@
 #> all_common:key_detect/select_preset
 # 角度を比較する
 
+# プリセットが無効化されている場合は中断
+execute if score @s all.preset_activate matches 0 run return run function all_common:key_detect/select/reset
+
 #角度を代入
 execute store result score @s all.rot_after run data get entity @s Rotation[0]
 

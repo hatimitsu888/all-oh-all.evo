@@ -1,5 +1,5 @@
-#> all_common:area_break/break
-# 破壊する
+#> all_common:area_break/break_preset
+# プリセットの通りに破壊する
 
 $execute if predicate all_common:preset/00 positioned ^2 ^2 ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
 $execute if predicate all_common:preset/01 positioned ^1 ^2 ^ if block ~ ~ ~ $(block_id) run function all_common:all/break/
@@ -35,4 +35,4 @@ $execute if predicate all_common:preset/44 positioned ^-2 ^-2 ^ if block ~ ~ ~ $
 scoreboard players add #all.A all.math 1
 
 #再帰
-execute if score #all.A all.math < #all.B all.math positioned ^ ^ ^1 run function all_common:area_break/break with storage all: area
+execute if score #all.A all.math < #all.B all.math positioned ^ ^ ^1 run function all_common:area_break/break_preset with storage all: area
