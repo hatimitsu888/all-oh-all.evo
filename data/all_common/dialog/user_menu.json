@@ -17,6 +17,15 @@
     "columns": 1,
     "actions": [
         {
+            "label":{
+                "text":"ツールの有効化 >"
+            },
+            "action":{
+                "type":"run_command",
+                "command":"trigger all.settings.user_menu set 12"
+            }
+        },
+        {
             "label": {
                 "text": "有効化の切り替え >"
             },

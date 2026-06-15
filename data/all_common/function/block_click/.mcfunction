@@ -4,6 +4,13 @@
 #データ取得
 function all_common:data_get/
 
+# ユーザー設定によりツールが無効化されている場合は処理を行わない
+execute if items entity @s weapon.mainhand #all_common:pickaxes if data storage all: {pos_data:{settings:{tools:{mine:false}}}} run return run data remove storage all: pos_data
+execute if items entity @s weapon.mainhand #all_common:axes if data storage all: {pos_data:{settings:{tools:{cut:false}}}} run return run data remove storage all: pos_data
+execute if items entity @s weapon.mainhand #all_common:shovels if data storage all: {pos_data:{settings:{tools:{dig:false}}}} run return run data remove storage all: pos_data
+execute if items entity @s weapon.mainhand #all_common:hoes if data storage all: {pos_data:{settings:{tools:{collect:false}}}} run return run data remove storage all: pos_data
+execute if items entity @s weapon.mainhand #all_common:shears if data storage all: {pos_data:{settings:{tools:{shears:false}}}} run return run data remove storage all: pos_data
+
 #初期化
 # tool: mine=1b cut=2b dig=3b collect=4b shears=5b
 data merge storage all: {\

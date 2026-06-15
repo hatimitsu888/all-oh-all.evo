@@ -40,3 +40,7 @@ data modify storage all: player append value {}
         [-1, -1, -1, -1, -1],\
         [-1, -1, -1, -1, -1]\
     ]}
+
+# 個別の設定を保存しておく
+    # ツールの有効化
+    data modify storage all: player[-1].settings.tools set value {mine:true, cut:true, dig:true, collect:true, shears:true}
