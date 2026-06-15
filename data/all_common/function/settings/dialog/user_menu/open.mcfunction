@@ -25,7 +25,7 @@ $dialog show @s {\
             action:{type:"run_command",command:"trigger all.settings.user_menu set 12"}\
         },\
         {\
-            label:{text:"有効化の切り替え >"},\
+            label:{text:"一括/範囲の有効化 >"},\
             action:{type:"run_command",command:"trigger all.settings.user_menu set 10"}\
         },\
         {\
