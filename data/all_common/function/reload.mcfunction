@@ -29,8 +29,10 @@ scoreboard objectives add all.settings trigger
     execute unless score #all.limit all.settings matches -2147483648..2147483647 run scoreboard players set #all.limit all.settings 120
     #自動回収
     execute unless score #all.auto_collect all.settings matches -2147483648..2147483647 run scoreboard players set #all.auto_collect all.settings 0
-    #一括破壊の有効/無効
+    #ツールの有効/無効
     execute unless data storage all: setting.tools run data modify storage all: setting.tools set value {cut:true, mine:true, dig:true, shears:true, collect:true}
+    #一括/範囲の有効/無効
+    execute unless data storage all: setting.activate run data modify storage all: setting.activate set value {bulk:true, area:true}
 #プレイヤー固有の設定
     #プリセット
     scoreboard objectives add all.preset dummy

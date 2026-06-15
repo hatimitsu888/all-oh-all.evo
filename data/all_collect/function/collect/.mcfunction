@@ -10,9 +10,9 @@ function all_common:all/break/unbreaking/
 function all_common:all/break/mined_item
 
 #範囲採掘
-execute if data storage all: pos_data{root:"area"} if data storage all: {pos_data:{settings:{activate:{area:true}}}} run function all_collect:collect/area/
+execute if data storage all: pos_data{root:"area"} if data storage all: {setting:{activate:{area:true}}} if data storage all: {pos_data:{settings:{activate:{area:true}}}} run function all_collect:collect/area/
 #一括破壊
-execute if data storage all: pos_data{root:"bulk"} if data storage all: {pos_data:{settings:{activate:{bulk:true}}}} run function all_collect:collect/bulk/
+execute if data storage all: pos_data{root:"bulk"} if data storage all: {setting:{activate:{bulk:true}}} if data storage all: {pos_data:{settings:{activate:{bulk:true}}}} run function all_collect:collect/bulk/
 
 #耐久値を減らす
 function all_common:all/break/set_damage/

@@ -4,6 +4,9 @@
 # ツール有効化の設定画面を開く
 execute if score @s all.settings.menu matches 23 run function all_common:settings/dialog/tool_activate/open_set
 
+# 有効化の設定画面を開く
+execute if score @s all.settings.menu matches 24 run function all_common:settings/dialog/activate/open_set
+
 # 一括破壊数上限の設定画面を開く
 execute if score @s all.settings.menu matches 20 run function all_common:settings/dialog/limit/open_set
 
@@ -18,6 +21,9 @@ execute if score @s all.settings.menu matches 10000..10002000 run function all_c
 
 # ツールの有効無効を設定
 execute if score @s all.settings.menu matches 20000000..20011111 run function all_common:settings/dialog/tool_activate/set
+
+# 一括/範囲の有効無効を設定
+execute if score @s all.settings.menu matches 100..111 run function all_common:settings/dialog/activate/set
 
 # テキストをリセット
 data modify storage all: setting.menu.text set value ""

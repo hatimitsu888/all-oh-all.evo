@@ -2,6 +2,7 @@
 # ブロックを左クリックしたらブロックを特定する
 
 # 無効化されている場合は処理を行わない
+execute if data storage all: {setting:{activate:{bulk:false, area:false}}} run return 0
 execute if items entity @s weapon.mainhand #all_common:pickaxes if data storage all: {setting:{tools:{mine:false}}} run return 0
 execute if items entity @s weapon.mainhand #all_common:axes if data storage all: {setting:{tools:{cut:false}}} run return 0
 execute if items entity @s weapon.mainhand #all_common:shovels if data storage all: {setting:{tools:{dig:false}}} run return 0

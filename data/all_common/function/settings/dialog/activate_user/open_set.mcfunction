@@ -14,6 +14,8 @@ execute if data storage all: {pos_data:{settings:{activate:{area:true}}}} run da
 execute if data storage all: {pos_data:{settings:{activate:{area:false}}}} run data modify storage all: setting.tmp.areaF set value true
 
 # ワールド設定で無効化されている
+execute if data storage all: {setting:{activate:{bulk:false}}} run data modify storage all: setting.tmp.bulkCol set value "dark_gray"
+execute if data storage all: {setting:{activate:{area:false}}} run data modify storage all: setting.tmp.areaCol set value "dark_gray"
 
 # リセット
 data remove storage all: pos_data

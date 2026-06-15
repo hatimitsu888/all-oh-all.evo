@@ -1,10 +1,14 @@
 #> all_cut:check_data
 # データの有無をチェックする
 
+# 無効化されていたら中断
+execute if data storage all: {setting:{activate:{bulk:false, area:false}}} run return 0
+
 #データを取り出す
 function all_common:data_get/
 
-# ツールが無効化されているなら中断
+# 無効化されているなら中断
+execute if data storage all: {pos_data:{settings:{activate:{bulk:false, area:false}}}} run return run data remove storage all: pos_data
 execute if data storage all: {pos_data:{settings:{tools:{cut:false}}}} run return run data remove storage all: pos_data
 
 #データが存在していれば一括破壊
