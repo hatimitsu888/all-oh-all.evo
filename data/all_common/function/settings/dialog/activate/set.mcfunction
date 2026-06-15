@@ -1,17 +1,31 @@
 #> all_common:settings/dialog/activate/set
 # 有効化の設定
 
+#データ取得
+function all_common:data_get/
+
+# 解読
+scoreboard players operation #all.A all.math = @s all.settings.user_menu
+scoreboard players operation #all.B all.math = @s all.settings.user_menu
+scoreboard players set #all.C all.math 10
+scoreboard players operation #all.A all.math %= #all.C all.math
+scoreboard players operation #all.B all.math /= #all.C all.math
+scoreboard players operation #all.B all.math -= #all.C all.math
+
 # 有効化の切り替え
-execute if score @s all.settings.user_menu matches 100 run scoreboard players set @s all.activate 0
-execute if score @s all.settings.user_menu matches 101 run scoreboard players set @s all.activate 1
-execute if score @s all.settings.user_menu matches 102 run scoreboard players set @s all.activate 2
-execute if score @s all.settings.user_menu matches 103 run scoreboard players set @s all.activate 3
+execute if score #all.A all.math matches 0 run data modify storage all: pos_data.settings.activate.area set value false
+execute if score #all.A all.math matches 1 run data modify storage all: pos_data.settings.activate.area set value true
+execute if score #all.B all.math matches 0 run data modify storage all: pos_data.settings.activate.bulk set value false
+execute if score #all.B all.math matches 1 run data modify storage all: pos_data.settings.activate.bulk set value true
+
+# 設定
+function all_common:data_set/
+
+# リセット
+data remove storage all: pos_data
 
 # メッセージ
-execute if score @s all.settings.user_menu matches 100 run data modify storage all: setting.menu.text set value "> すべて有効 にしました <"
-execute if score @s all.settings.user_menu matches 101 run data modify storage all: setting.menu.text set value "> 一括破壊のみ有効 にしました <"
-execute if score @s all.settings.user_menu matches 102 run data modify storage all: setting.menu.text set value "> 範囲採掘のみ有効 にしました <"
-execute if score @s all.settings.user_menu matches 103 run data modify storage all: setting.menu.text set value "> すべて無効 にしました <"
+data modify storage all: setting.menu.text set value "> 一括/範囲の有効化を設定しました <"
 
 # 戻る
 function all_common:settings/dialog/user_menu/

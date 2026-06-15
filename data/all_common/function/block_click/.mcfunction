@@ -2,7 +2,6 @@
 # ブロックを左クリックしたらブロックを特定する
 
 # 無効化されている場合は処理を行わない
-execute if score @s all.activate matches 3 run return 0
 execute if items entity @s weapon.mainhand #all_common:pickaxes if data storage all: {setting:{tools:{mine:false}}} run return 0
 execute if items entity @s weapon.mainhand #all_common:axes if data storage all: {setting:{tools:{cut:false}}} run return 0
 execute if items entity @s weapon.mainhand #all_common:shovels if data storage all: {setting:{tools:{dig:false}}} run return 0
@@ -12,7 +11,8 @@ execute if items entity @s weapon.mainhand #all_common:shears if data storage al
 #データ取得
 function all_common:data_get/
 
-# ユーザー設定によりツールが無効化されている場合は処理を行わない
+# ユーザー設定により無効化されている場合は処理を行わない
+execute if data storage all: {pos_data:{settings:{activate:{bulk:false,area:false}}}} run return run data remove storage all: pos_data
 execute if items entity @s weapon.mainhand #all_common:pickaxes if data storage all: {pos_data:{settings:{tools:{mine:false}}}} run return run data remove storage all: pos_data
 execute if items entity @s weapon.mainhand #all_common:axes if data storage all: {pos_data:{settings:{tools:{cut:false}}}} run return run data remove storage all: pos_data
 execute if items entity @s weapon.mainhand #all_common:shovels if data storage all: {pos_data:{settings:{tools:{dig:false}}}} run return run data remove storage all: pos_data

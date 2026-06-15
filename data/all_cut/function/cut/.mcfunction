@@ -12,7 +12,7 @@ function all_common:all/break/mined_item
 #範囲採掘
 
 #一括破壊
-execute if data storage all: pos_data{root:"bulk"} if predicate all_common:activate/bulk run function all_cut:cut/bulk/
+execute if data storage all: pos_data{root:"bulk"} if data storage all: {pos_data:{settings:{activate:{bulk:true}}}} run function all_cut:cut/bulk/
 
 #耐久値を減らす
 function all_common:all/break/set_damage/

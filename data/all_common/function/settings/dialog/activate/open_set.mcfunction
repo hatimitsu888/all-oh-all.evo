@@ -2,17 +2,22 @@
 # 有効化の設定画面を開くための準備
 
 # 初期設定
-data modify storage all: setting.tmp.text set value "$(activate)"
+data modify storage all: setting.tmp set value {text:"$(bulk)$(area)", bulkT:"false", bulkF:"false", areaT:"false", areaF:"false", bulkCol:"white", areaCol:"white"}
+
+#データ取得
+function all_common:data_get/
 
 # 有効化の状態によって初期値を決定
-data modify storage all: setting.tmp.activate0 set value false
-data modify storage all: setting.tmp.activate1 set value false
-data modify storage all: setting.tmp.activate2 set value false
-data modify storage all: setting.tmp.activate3 set value false
-execute if score @s all.activate matches 0 run data modify storage all: setting.tmp.activate0 set value "true"
-execute if score @s all.activate matches 1 run data modify storage all: setting.tmp.activate1 set value "true"
-execute if score @s all.activate matches 2 run data modify storage all: setting.tmp.activate2 set value "true"
-execute if score @s all.activate matches 3 run data modify storage all: setting.tmp.activate3 set value "true"
+execute if data storage all: {pos_data:{settings:{activate:{bulk:true}}}} run data modify storage all: setting.tmp.bulkT set value true
+execute if data storage all: {pos_data:{settings:{activate:{bulk:false}}}} run data modify storage all: setting.tmp.bulkF set value true
+execute if data storage all: {pos_data:{settings:{activate:{area:true}}}} run data modify storage all: setting.tmp.areaT set value true
+execute if data storage all: {pos_data:{settings:{activate:{area:false}}}} run data modify storage all: setting.tmp.areaF set value true
+
+# ワールド設定で無効化されている
+
+# リセット
+data remove storage all: pos_data
+
 
 # メニューを開く
 function all_common:settings/dialog/activate/open with storage all: setting.tmp

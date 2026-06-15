@@ -2,7 +2,7 @@
 # クリックしたブロックの面を検知する
 
 # 設定で範囲採掘が無効化されている場合は処理を行わない
-execute if score @s all.activate matches 1 run return 0
+execute if data storage all: {pos_data:{settings:{activate:{area:false}}}} run return 0
 
 #プレイヤータグ付け
 tag @s add all.this

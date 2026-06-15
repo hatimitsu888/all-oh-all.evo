@@ -8,42 +8,65 @@ $dialog show @s {\
         type:"minecraft:plain_message",\
         contents:[{text:"一括破壊、範囲採掘の有無を切り替える事が出来ます。"}]\
     },\
-    inputs:[{\
-        type:"minecraft:single_option",\
-        key:"activate",\
-        label:"有効化",\
-        options:[{\
-            id:"100",\
-            display:{text:"すべて有効",color:"gold"},\
-            initial:$(activate0)\
+    inputs:[\
+        {\
+            type:"minecraft:single_option",\
+            key:"bulk",\
+            label:{\
+                text: "一括破壊",\
+                color: "$(bulkCol)"\
+            },\
+            options:[\
+                {\
+                    id:"0",\
+                    display:{text:"無効",color:"red"},\
+                    initial:$(bulkF)\
+                },\
+                {\
+                    id:"1",\
+                    display:{text:"有効",color:"green"},\
+                    initial:$(bulkT)\
+                }\
+            ]\
         },\
         {\
-            id:"101",\
-            display:{text:"一括破壊のみ有効",color:"gold"},\
-            initial:$(activate1)\
-        },\
-        {\
-            id:"102",\
-            display:{text:"範囲採掘のみ有効",color:"gold"},\
-            initial:$(activate2)\
-        },\
-        {\
-            id:"103",\
-            display:{text:"すべて無効",color:"gold"},\
-            initial:$(activate3)\
-        }]\
-    }],\
+            type:"minecraft:single_option",\
+            key:"area",\
+            label:{\
+                text: "範囲採掘",\
+                color: "$(areaCol)"\
+            },\
+            options:[\
+                {\
+                    id:"0",\
+                    display:{text:"無効",color:"red"},\
+                    initial:$(areaF)\
+                },\
+                {\
+                    id:"1",\
+                    display:{text:"有効",color:"green"},\
+                    initial:$(areaT)\
+                }\
+            ]\
+        }\
+    ],\
     can_close_with_escape:1,\
     pause:0,\
     after_action:"none",\
     yes:{\
         label:{text:"決定"},\
         width:150,\
-        action:{type:"dynamic/run_command",template:"trigger all.settings.user_menu set $(text)"}\
+        action:{\
+            type: "dynamic/run_command",\
+            template: "trigger all.settings.user_menu set 1$(text)"\
+        }\
     },\
     no:{\
         label:{text:"戻る"},\
         width:50,\
-        action:{type:"minecraft:run_command",command:"trigger all.settings.user_menu set 2"}\
+        action:{\
+            type: "minecraft:run_command",\
+            command: "trigger all.settings.user_menu set 2"\
+        }\
     }\
 }

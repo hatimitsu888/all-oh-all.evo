@@ -9,7 +9,6 @@ scoreboard objectives remove all.player_id
 scoreboard objectives remove all.math
 scoreboard objectives remove all.break_cnt
 scoreboard objectives remove all.settings
-scoreboard objectives remove all.activate
 scoreboard objectives remove all.settings.menu
 scoreboard objectives remove all.settings.user_menu
 scoreboard objectives remove all.tool.pickaxe.wood
