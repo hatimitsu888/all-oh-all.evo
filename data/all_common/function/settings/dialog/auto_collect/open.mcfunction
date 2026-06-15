@@ -6,12 +6,21 @@ $dialog show @s {\
     "title":{"text":"All-oh-All.evo (ワールド設定)","color":"gold","bold":true},\
     "inputs":[\
         {\
-            "type":"minecraft:boolean",\
+            "type":"minecraft:single_option",\
             "key":"auto_collect",\
             "label":"自動回収",\
-            "initial":$(value),\
-            "on_true":"11",\
-            "on_false":"10"\
+            options:[\
+                {\
+                    id:"0",\
+                    display:{text:"オフ",color:"red"},\
+                    initial:$(F)\
+                },\
+                {\
+                    id:"1",\
+                    display:{text:"オン",color:"green"},\
+                    initial:$(T)\
+                }\
+            ]\
         }\
     ],\
     "can_close_with_escape":true,\
@@ -20,7 +29,7 @@ $dialog show @s {\
     "yes":{\
         "label":"決定",\
         "width": 150,\
-        "action":{"type":"dynamic/run_command","template":"trigger all.settings.menu set $(text)"}\
+        "action":{"type":"dynamic/run_command","template":"trigger all.settings.menu set 1$(text)"}\
     },\
     "no":{\
         "label":"戻る",\
