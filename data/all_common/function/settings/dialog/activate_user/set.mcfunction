@@ -23,6 +23,9 @@ function all_common:data_set/
 
 # リセット
 data remove storage all: pos_data
+scoreboard players reset #all.A
+scoreboard players reset #all.B
+scoreboard players reset #all.C
 
 # メッセージ
 data modify storage all: setting.menu.text set value "> 一括/範囲の有効化を設定しました <"
