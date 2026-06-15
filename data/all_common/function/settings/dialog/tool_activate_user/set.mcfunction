@@ -37,6 +37,7 @@ function all_common:data_set/
 
 # リセット
 data remove storage all: scoreToText
+data remove storage all: pos_data
 
 # メッセージ
 data modify storage all: setting.menu.text set value "> ツールの有効/無効を設定しました <"

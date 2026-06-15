@@ -30,5 +30,8 @@ execute if data storage all: {setting:{tools:{dig:false}}} run data modify stora
 execute if data storage all: {setting:{tools:{shears:false}}} run data modify storage all: setting.tmp.shearsCol set value "dark_gray"
 execute if data storage all: {setting:{tools:{collect:false}}} run data modify storage all: setting.tmp.collectCol set value "dark_gray"
 
+# リセット
+data remove storage all: pos_data
+
 # メニューを開く
 function all_common:settings/dialog/tool_activate_user/open with storage all: setting.tmp
