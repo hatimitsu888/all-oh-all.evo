@@ -1,4 +1,4 @@
-#> all_common:settings/dialog/activate/set
+#> all_common:settings/dialog/activate_user/set
 # 有効化の設定
 
 #データ取得

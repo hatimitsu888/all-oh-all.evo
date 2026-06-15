@@ -1,4 +1,4 @@
-#> all_common:settings/dialog/activate/open
+#> all_common:settings/dialog/activate_user/open
 # 有効化の設定画面を開く
 
 $dialog show @s {\

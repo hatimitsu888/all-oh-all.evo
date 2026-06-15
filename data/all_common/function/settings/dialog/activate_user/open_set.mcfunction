@@ -1,4 +1,4 @@
-#> all_common:settings/dialog/activate/open_set
+#> all_common:settings/dialog/activate_user/open_set
 # 有効化の設定画面を開くための準備
 
 # 初期設定
@@ -20,4 +20,4 @@ data remove storage all: pos_data
 
 
 # メニューを開く
-function all_common:settings/dialog/activate/open with storage all: setting.tmp
+function all_common:settings/dialog/activate_user/open with storage all: setting.tmp
