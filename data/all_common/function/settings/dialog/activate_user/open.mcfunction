@@ -6,7 +6,10 @@ $dialog show @s {\
     title:{text:"All-oh-All.evo (個人設定)"},\
     body:{\
         type:"minecraft:plain_message",\
-        contents:[{text:"一括破壊、範囲採掘の有無を切り替える事が出来ます。"}]\
+        contents:[\
+            {text:"一括破壊、範囲採掘の有無を切り替える事が出来ます。\n"},\
+            {text: "ワールド設定により無効化されている場合はそちらが優先されます。"}\
+        ]\
     },\
     inputs:[\
         {\
