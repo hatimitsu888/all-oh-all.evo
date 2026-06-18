@@ -1,6 +1,35 @@
 #> all_common:init
 # プレイヤーの初期設定
 
+# ウェルカムテキスト
+tellraw @s [\
+    {text: ""},\
+    [\
+        {text :"----------"},\
+        {text: " [All-oh-All.evo] ", color: "gold"},\
+        {text: "----------"},\
+        {text: "\n"}\
+    ],\
+    [\
+        {text: ""},\
+        {text: "対応ツール",color: aqua, hover_event: {action: "show_text", value: "ツルハシ、斧、シャベル、クワ、ハサミ"}},\
+        {text: "を持った状態で"},\
+        {keybind: "key.sneak", color: "light_purple", bold: true},\
+        {text: "を素早く2回", color: light_purple},\
+        {text: "押すことで一括破壊を有効化"},\
+        {text: "\n"}\
+    ],\
+    [\
+        {text: ""},\
+        {keybind: "key.quickActions", bold: true},\
+        {text: "キーで設定を開く"},\
+        {text: "\n"}\
+    ],\
+    [\
+        {text :"--------------------------------------"}\
+    ]\
+]
+
 #スコア
 scoreboard players set @s all.input_save 0
 scoreboard players set @s all.settings 0
