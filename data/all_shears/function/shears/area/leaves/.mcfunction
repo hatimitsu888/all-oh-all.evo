@@ -12,3 +12,6 @@ execute if data storage all: pos_data{block_id:"cherry_leaves"} run function all
 execute if data storage all: pos_data{block_id:"azalea_leaves"} run function all_shears:shears/area/leaves/azalea_leaves
 execute if data storage all: pos_data{block_id:"flowering_azalea_leaves"} run function all_shears:shears/area/leaves/flowering_azalea_leaves
 execute if data storage all: pos_data{block_id:"pale_oak_leaves"} run function all_shears:shears/area/leaves/pale_oak_leaves
+execute if data storage all: pos_data{block_id:"red_poplar_leaves"} run function all_shears:shears/area/leaves/red_poplar_leaves
+execute if data storage all: pos_data{block_id:"orange_poplar_leaves"} run function all_shears:shears/area/leaves/orange_poplar_leaves
+execute if data storage all: pos_data{block_id:"yellow_poplar_leaves"} run function all_shears:shears/area/leaves/yellow_poplar_leaves

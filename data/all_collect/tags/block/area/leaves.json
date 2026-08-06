@@ -10,6 +10,9 @@
         "cherry_leaves",
         "azalea_leaves",
         "flowering_azalea_leaves",
-        "pale_oak_leaves"
+        "pale_oak_leaves",
+        "red_poplar_leaves",
+        "orange_poplar_leaves",
+        "yellow_poplar_leaves"
     ]
 }

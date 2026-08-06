@@ -37,3 +37,12 @@ execute if block ~ ~ ~ flowering_azalea_leaves run data modify storage all: pos_
 
 execute if block ~ ~ ~ pale_oak_leaves run data modify storage all: pos_data.block_id set value \
 "pale_oak_leaves"
+
+execute if block ~ ~ ~ red_poplar_leaves run data modify storage all: pos_data.block_id set value \
+"red_poplar_leaves"
+
+execute if block ~ ~ ~ orange_poplar_leaves run data modify storage all: pos_data.block_id set value \
+"orange_poplar_leaves"
+
+execute if block ~ ~ ~ yellow_poplar_leaves run data modify storage all: pos_data.block_id set value \
+"yellow_poplar_leaves"

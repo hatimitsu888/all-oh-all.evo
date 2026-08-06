@@ -1,5 +1,5 @@
 #> all_cut:cut/bulk/wood/
-# 一括破壊時のブロックを特定(葉)
+# 一括破壊時のブロックを特定(原木)
 
 execute if data storage all: pos_data{block_id:"oak_log"} run function all_cut:cut/bulk/wood/oak
 execute if data storage all: pos_data{block_id:"spruce_log"} run function all_cut:cut/bulk/wood/spruce
@@ -12,3 +12,4 @@ execute if data storage all: pos_data{block_id:"mangrove_roots"} run function al
 execute if data storage all: pos_data{block_id:"cherry_log"} run function all_cut:cut/bulk/wood/cherry
 execute if data storage all: pos_data{block_id:"bamboo_block"} run function all_cut:cut/bulk/wood/bamboo
 execute if data storage all: pos_data{block_id:"pale_oak"} run function all_cut:cut/bulk/wood/pale_oak
+execute if data storage all: pos_data{block_id:"poplar"} run function all_cut:cut/bulk/wood/poplar

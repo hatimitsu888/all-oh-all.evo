@@ -10,6 +10,7 @@
         "mangrove_roots",
         "#all_cut:logs/cherry",
         "#all_cut:bamboo_block",
-        "#all_cut:logs/pale_oak"
+        "#all_cut:logs/pale_oak",
+        "#all_cut:logs/poplar"
     ]
 }
