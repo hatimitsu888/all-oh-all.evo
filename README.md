@@ -212,6 +212,7 @@ A、B、Cのプリセットは**ツールを持った状態で**「**スニー�
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/mangrove_roots_side.png)マングローブの根  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/cherry_log_top.png)サクラの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/stripped_cherry_log_top.png)樹皮を剥いだサクラの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/cherry_log.png)サクラの木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/stripped_cherry_log.png)樹皮を剥いだサクラの木  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/pale_oak_log_top.png)ペールオークの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/stripped_pale_oak_log_top.png)樹皮を剥いだペールオークの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/pale_oak_log.png)ペールオークの木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/stripped_pale_oak_log.png)樹皮を剥いだペールオークの木  
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/poplar_log_top.png)ポプラの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/stripped_poplar_log_top.png)樹皮を剥いだポプラの原木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/poplar_log.png)ポプラの木/![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/stripped_poplar_log.png)樹皮を剥いだポプラの木  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/bamboo_block.png)竹ブロック/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/stripped_bamboo_block.png)表皮を剥いだ竹ブロック  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/crimson_stem_top.png)深紅の幹  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/warped_stem_top.png)歪んだ幹  
@@ -244,6 +245,9 @@ A、B、Cのプリセットは**ツールを持った状態で**「**スニー�
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/azalea_leaves.png)ツツジの葉
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/flowering_azalea_leaves.png)開花したツツジの葉
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/pale_oak_leaves.png)ペールオークの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/red_poplar_leaves.png)赤色のポプラの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/orange_poplar_leaves.png)橙色のポプラの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/yellow_poplar_leaves.png)黄色のポプラの葉
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/moss_block.png)苔ブロック
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/pale_moss_block.png)色あせた苔ブロック
 ### 一括破壊
@@ -270,6 +274,9 @@ A、B、Cのプリセットは**ツールを持った状態で**「**スニー�
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/azalea_leaves.png)ツツジの葉
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/flowering_azalea_leaves.png)開花したツツジの葉
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/pale_oak_leaves.png)ペールオークの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/red_poplar_leaves.png)赤色のポプラの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/orange_poplar_leaves.png)橙色のポプラの葉
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/26.3-snapshot-7/assets/minecraft/textures/block/yellow_poplar_leaves.png)黄色のポプラの葉
 ### 一括破壊
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/cobweb.png)クモの巣  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/vine.png)ツタ  
