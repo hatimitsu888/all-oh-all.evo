@@ -1,5 +1,5 @@
 {
-    "condition": "minecraft:entity_properties",
+    "type": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
         "minecraft:type_specific/player": {
@@ -7,7 +7,7 @@
                 "sneak": true
             }
         },
-        "equipment": {
+        "minecraft:equipment": {
             "mainhand": {
                 "items": "#all_common:tools"
             }

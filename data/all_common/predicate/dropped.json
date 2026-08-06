@@ -1,7 +1,7 @@
 {
-    "condition": "minecraft:entity_properties",
+    "type": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{Age: 0s}"
+        "minecraft:nbt": "{Age: 0s}"
     }
 }

@@ -1,7 +1,15 @@
 {
-    "condition": "minecraft:entity_properties",
+    "type": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{SelectedItem:{components:{\"minecraft:enchantments\":{\"all_common:block_click\":1}}}}"
+        "minecraft:equipment": {
+            "mainhand": {
+                "components": {
+                    "minecraft:enchantments": {
+                        "all_common:block_click": 1
+                    }
+                }
+            }
+        }
     }
 }

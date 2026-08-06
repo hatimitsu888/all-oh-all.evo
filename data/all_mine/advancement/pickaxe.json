@@ -1,78 +1,76 @@
 {
     "criteria": {
-        "requirement": {
+        "tick": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:any_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.wood": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.stone": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.copper": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.iron": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.gold": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.diamond": {
-                                        "min": 1
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "this",
-                                "scores": {
-                                    "all.tool.pickaxe.netherite": {
-                                        "min": 1
-                                    }
+                "player": {
+                    "type": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.wood": {
+                                    "min": 1
                                 }
                             }
-                        ]
-                    }
-                ]
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.stone": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.copper": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.iron": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.gold": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.diamond": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "all.tool.pickaxe.netherite": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     },

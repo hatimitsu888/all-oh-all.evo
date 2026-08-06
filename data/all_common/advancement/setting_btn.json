@@ -1,19 +1,17 @@
 {
     "criteria": {
-        "requirement": {
+        "tick": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "all.settings": {
-                                "min": 1
-                            }
+                "player": {
+                    "type": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "all.settings": {
+                            "min": 1
                         }
                     }
-                ]
+                }
             }
         }
     },

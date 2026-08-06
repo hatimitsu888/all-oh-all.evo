@@ -1,6 +1,6 @@
 {
     "description": {
-        "text": "ALL-OH-ALL",
+        "text": "ALL-OH-ALL（一括破壊）",
         "color": "gold"
     },
     "supported_items": "#all_common:tools",
@@ -21,170 +21,166 @@
     "effects": {
         "minecraft:hit_block": [
             {
+                "requirements": {
+                    "type": "minecraft:any_of",
+                    "terms": {
+                        "type": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "minecraft:equipment": {
+                                                "mainhand": {
+                                                    "items": "#all_common:pickaxes"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:inverted",
+                                        "term": {
+                                            "type": "minecraft:location_check",
+                                            "predicate": {
+                                                "block": {
+                                                    "blocks": "#all_mine:"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "minecraft:equipment": {
+                                                "mainhand": {
+                                                    "items": "#all_common:axes"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:inverted",
+                                        "term": {
+                                            "type": "minecraft:location_check",
+                                            "predicate": {
+                                                "block": {
+                                                    "blocks": "#all_cut:"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "minecraft:equipment": {
+                                                "mainhand": {
+                                                    "items": "#all_common:shovels"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:inverted",
+                                        "term": {
+                                            "type": "minecraft:location_check",
+                                            "predicate": {
+                                                "block": {
+                                                    "blocks": "#all_dig:"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "minecraft:equipment": {
+                                                "mainhand": {
+                                                    "items": "#all_common:hoes"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:inverted",
+                                        "term": {
+                                            "type": "minecraft:location_check",
+                                            "predicate": {
+                                                "block": {
+                                                    "blocks": "#all_collect:"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "minecraft:equipment": {
+                                                "mainhand": {
+                                                    "items": "#all_common:shears"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:inverted",
+                                        "term": {
+                                            "type": "minecraft:location_check",
+                                            "predicate": {
+                                                "block": {
+                                                    "blocks": "#all_shears:"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "all_common:data_reset/"
-                },
-                "requirements": {
-                    "condition": "minecraft:any_of",
-                    "terms": [
-
-                        {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "items": "#all_common:pickaxes"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:location_check",
-                                        "predicate": {
-                                            "block": {
-                                                "blocks": "#all_mine:"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "items": "#all_common:axes"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:location_check",
-                                        "predicate": {
-                                            "block": {
-                                                "blocks": "#all_cut:"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "items": "#all_common:shovels"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:location_check",
-                                        "predicate": {
-                                            "block": {
-                                                "blocks": "#all_dig:"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "items": "#all_common:hoes"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:location_check",
-                                        "predicate": {
-                                            "block": {
-                                                "blocks": "#all_collect:"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "items": "#all_common:shears"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:location_check",
-                                        "predicate": {
-                                            "block": {
-                                                "blocks": "#all_shears:"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-
-                    ]
                 }
             },
             {
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "all_common:block_click/"
-                },
                 "requirements": {
-                    "condition": "minecraft:any_of",
+                    "type": "minecraft:any_of",
                     "terms": [
-
                         {
-                            "condition": "minecraft:all_of",
+                            "type": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
+                                        "minecraft:equipment": {
                                             "mainhand": {
                                                 "items": "#all_common:pickaxes"
                                             }
@@ -192,7 +188,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:location_check",
+                                    "type": "minecraft:location_check",
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_mine:"
@@ -202,13 +198,13 @@
                             ]
                         },
                         {
-                            "condition": "minecraft:all_of",
+                            "type": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
+                                        "minecraft:equipment": {
                                             "mainhand": {
                                                 "items": "#all_common:axes"
                                             }
@@ -216,7 +212,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:location_check",
+                                    "type": "minecraft:location_check",
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_cut:"
@@ -226,13 +222,13 @@
                             ]
                         },
                         {
-                            "condition": "minecraft:all_of",
+                            "type": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
+                                        "minecraft:equipment": {
                                             "mainhand": {
                                                 "items": "#all_common:shovels"
                                             }
@@ -240,7 +236,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:location_check",
+                                    "type": "minecraft:location_check",
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_dig:"
@@ -250,13 +246,13 @@
                             ]
                         },
                         {
-                            "condition": "minecraft:all_of",
+                            "type": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
+                                        "minecraft:equipment": {
                                             "mainhand": {
                                                 "items": "#all_common:hoes"
                                             }
@@ -264,7 +260,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:location_check",
+                                    "type": "minecraft:location_check",
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_collect:"
@@ -274,13 +270,13 @@
                             ]
                         },
                         {
-                            "condition": "minecraft:all_of",
+                            "type": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
+                                        "minecraft:equipment": {
                                             "mainhand": {
                                                 "items": "#all_common:shears"
                                             }
@@ -288,7 +284,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "minecraft:location_check",
+                                    "type": "minecraft:location_check",
                                     "predicate": {
                                         "block": {
                                             "blocks": "#all_shears:"
@@ -297,8 +293,11 @@
                                 }
                             ]
                         }
-
                     ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "all_common:block_click/"
                 }
             }
         ],

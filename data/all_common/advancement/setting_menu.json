@@ -3,19 +3,17 @@
         "tick": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:value_check",
-                        "value": {
-                            "type": "minecraft:score",
-                            "target": "this",
-                            "score": "all.settings.menu"
-                        },
-                        "range": {
-                            "min": 1
-                        }
+                "player": {
+                    "type": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": "this",
+                        "score": "all.settings.menu"
+                    },
+                    "range": {
+                        "min": 1
                     }
-                ]
+                }
             }
         }
     },
