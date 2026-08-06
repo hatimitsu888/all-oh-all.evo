@@ -58,3 +58,5 @@ execute if entity @s[advancements={all_common:init=false}] run return 0
 
     # リセット
     data remove storage all: pos_data
+
+# v2.2 ---------------------------------------------
