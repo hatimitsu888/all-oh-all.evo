@@ -6,8 +6,8 @@ scoreboard players add #break_cnt all.break_cnt 1
 
 #耐久値カウント
 scoreboard players add #durability all.break_cnt 1
-#耐久力のエンチャントがある
-execute if score #unbreaking_lvl all.break_cnt matches 1.. run function all_common:all/break/unbreaking/durability
+#耐久力のエンチャントがあったら確率でダメージを免除
+execute if score #unbreaking_lvl all.break_cnt matches 1.. unless predicate all_common:math/unbreaking run scoreboard players remove #durability all.break_cnt 1
 
 #アイテムを出現させる
 loot spawn ~ ~ ~ mine ~ ~ ~ mainhand

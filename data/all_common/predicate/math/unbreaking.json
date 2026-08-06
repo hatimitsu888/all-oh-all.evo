@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "#unbreaking_lvl"
+            },
+            "score": "all.break_cnt"
+        }
+    },
+    "range": 0
+}

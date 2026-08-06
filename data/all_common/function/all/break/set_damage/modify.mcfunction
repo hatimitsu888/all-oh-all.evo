@@ -1,4 +1,4 @@
 #> all_common:all/break/set_damage/modify
-# 経験値を設定
+# 耐久値を減らす
 
-$item modify entity @s weapon.mainhand {function:set_components, components:{damage:$(value)}}
+$item modify entity @s weapon.mainhand {type:"minecraft:set_components", components:{damage:$(value)}}

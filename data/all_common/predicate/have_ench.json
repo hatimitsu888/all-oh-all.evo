@@ -4,10 +4,13 @@
     "predicate": {
         "minecraft:equipment": {
             "mainhand": {
-                "components": {
-                    "minecraft:enchantments": {
-                        "all_common:block_click": 1
-                    }
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "all_common:block_click",
+                            "levels": 1
+                        }
+                    ]
                 }
             }
         }
