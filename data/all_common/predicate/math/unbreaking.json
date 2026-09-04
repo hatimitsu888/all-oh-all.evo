@@ -1,16 +1,25 @@
 {
-    "type": "minecraft:value_check",
-    "value": {
-        "type": "minecraft:uniform",
-        "min": 0,
-        "max": {
-            "type": "minecraft:score",
-            "target": {
-                "type": "minecraft:fixed",
-                "name": "#unbreaking_lvl"
-            },
-            "score": "all.break_cnt"
+    "type": "minecraft:random_chance",
+    "chance": {
+        "type": "minecraft:div",
+        "left": 1,
+        "right": {
+            "type": "minecraft:from_int",
+            "input": {
+                "type": "minecraft:add",
+                "inputs": [
+                    {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#unbreaking_lvl"
+                        },
+                        "score": "all.break_cnt",
+                        "fallback": 0
+                    },
+                    1
+                ]
+            }
         }
-    },
-    "range": 0
+    }
 }
