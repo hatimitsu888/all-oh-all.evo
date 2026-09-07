@@ -43,3 +43,12 @@ scoreboard objectives remove all.tool.shears
 data remove storage all: player
 data remove storage all: tmp
 data remove storage all: pos_data
+data remove storage all: area
+data remove storage all: bulk
+data remove storage all: setting
+
+# データパックを無効化
+datapack disable "file/all-oh-all.evo"
+
+# エンチャントが付与された状態でアンインストールを行うと、
+# 手に持ったエンチャント付与済のツールが存在しない関数を実行しようとするためエラーを吐く。
