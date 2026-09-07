@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:all_of",
+    "terms": [
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "minecraft:slots": {
+                    "weapon.mainhand": {
+                        "items": "#all_common:shovels"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:int_value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "all:",
+                "path": "pos_data.settings.tools.dig"
+            },
+            "test": 0
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        "all_common:activate/world/cut",
+        "all_common:activate/world/dig",
+        "all_common:activate/world/mine",
+        "all_common:activate/world/collect",
+        "all_common:activate/world/shears",
+        "all_common:activate/world/area",
+        "all_common:activate/world/bulk"
+    ]
+}

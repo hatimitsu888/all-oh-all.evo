@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:int_value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "all:",
+        "path": "pos_data.settings.activate.area"
+    },
+    "test": 0
+}
