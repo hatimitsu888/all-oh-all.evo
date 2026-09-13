@@ -44,8 +44,9 @@ $dialog show @s {\
             [\
                 "奥行き：",\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "green",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 401"\
@@ -56,8 +57,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r2)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 402"\
@@ -68,8 +70,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r3)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 403"\
@@ -80,8 +83,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r4)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 404"\
@@ -92,8 +96,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r5)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 405"\
@@ -104,8 +109,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r6)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 406"\
@@ -116,8 +122,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r7)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 407"\
@@ -128,8 +135,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r8)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 408"\
@@ -140,8 +148,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r9)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 409"\
@@ -152,8 +161,9 @@ $dialog show @s {\
                     }\
                 },\
                 {\
-                    "text": "█",\
+                    "text": "\u2588",\
                     "color": "$(r10)",\
+                    "shadow_color": [0,0,0,0],\
                     "click_event": {\
                         "action": "run_command",\
                         "command": "trigger all.settings.user_menu set 410"\
@@ -180,8 +190,9 @@ $dialog show @s {\
     "actions": [\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b00)"\
+                "text": "\u2588",\
+                "color": "$(b00)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -191,8 +202,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b01)"\
+                "text": "\u2588",\
+                "color": "$(b01)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -202,8 +214,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b02)"\
+                "text": "\u2588",\
+                "color": "$(b02)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -213,8 +226,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b03)"\
+                "text": "\u2588",\
+                "color": "$(b03)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -224,8 +238,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b04)"\
+                "text": "\u2588",\
+                "color": "$(b04)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -235,8 +250,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b10)"\
+                "text": "\u2588",\
+                "color": "$(b10)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -246,8 +262,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b11)"\
+                "text": "\u2588",\
+                "color": "$(b11)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -257,8 +274,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b12)"\
+                "text": "\u2588",\
+                "color": "$(b12)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -268,8 +286,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b13)"\
+                "text": "\u2588",\
+                "color": "$(b13)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -279,8 +298,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b14)"\
+                "text": "\u2588",\
+                "color": "$(b14)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -290,8 +310,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b20)"\
+                "text": "\u2588",\
+                "color": "$(b20)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -301,8 +322,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b21)"\
+                "text": "\u2588",\
+                "color": "$(b21)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -312,16 +334,18 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "O",\
-                "color": "green"\
+                "text": "\u271B",\
+                "color": "green",\
+                "shadow_color": [0,0,0,0]\
             },\
             "tooltip": "中心",\
             "width": 20\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b23)"\
+                "text": "\u2588",\
+                "color": "$(b23)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -331,8 +355,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b24)"\
+                "text": "\u2588",\
+                "color": "$(b24)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -342,8 +367,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b30)"\
+                "text": "\u2588",\
+                "color": "$(b30)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -353,8 +379,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b31)"\
+                "text": "\u2588",\
+                "color": "$(b31)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -364,8 +391,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b32)"\
+                "text": "\u2588",\
+                "color": "$(b32)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -375,8 +403,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b33)"\
+                "text": "\u2588",\
+                "color": "$(b33)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -386,8 +415,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b34)"\
+                "text": "\u2588",\
+                "color": "$(b34)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -397,8 +427,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b40)"\
+                "text": "\u2588",\
+                "color": "$(b40)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -408,8 +439,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b41)"\
+                "text": "\u2588",\
+                "color": "$(b41)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -419,8 +451,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b42)"\
+                "text": "\u2588",\
+                "color": "$(b42)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -430,8 +463,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b43)"\
+                "text": "\u2588",\
+                "color": "$(b43)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
@@ -441,8 +475,9 @@ $dialog show @s {\
         },\
         {\
             "label": {\
-                "text": "X",\
-                "color": "$(b44)"\
+                "text": "\u2588",\
+                "color": "$(b44)",\
+                "shadow_color": [0,0,0,0]\
             },\
             "width": 20,\
             "action": {\
