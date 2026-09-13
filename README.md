@@ -98,7 +98,7 @@ A、B、Cのプリセットは**ツールを持った状態で**「**スニー�
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/diorite.png)閃緑岩  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/andesite.png)安山岩  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/sandstone.png)砂岩  
-* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/basalt_top.png)玄武岩/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/smooth_basalt.png)滑らかな玄武岩  
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/basalt_top.png)![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/smooth_basalt.png)玄武岩/滑らかな玄武岩  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/tuff.png)凝灰岩  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/blackstone.png)ブラックストーン  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/end_stone.png)エンドストーン  
@@ -254,7 +254,7 @@ A、B、Cのプリセットは**ツールを持った状態で**「**スニー�
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/shroomlight.png)シュルームライト  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/hay_block_side.png)干草の俵  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/dried_kelp_top.png)乾燥した昆布ブロック  
-* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/sponge.png)スポンジ/![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/wet_sponge.png)濡れたスポンジ  
+* ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/sponge.png)![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/wet_sponge.png)スポンジ/濡れたスポンジ  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/wheat_stage7.png)小麦[^1]
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/carrots_stage3.png)ニンジン[^1]  
 * ![](https://github.com/InventivetalentDev/minecraft-assets/blob/44dd81e1a2bcbfb7da7dea467ca3983e898dde08/assets/minecraft/textures/block/potatoes_stage3.png)ジャガイモ[^1]
