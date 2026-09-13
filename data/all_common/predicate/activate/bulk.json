@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        "all_common:activate/player/bulk",
+        "all_common:activate/world/bulk"
+    ]
+}

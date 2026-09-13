@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        "all_common:activate/player/area",
+        "all_common:activate/world/area"
+    ]
+}

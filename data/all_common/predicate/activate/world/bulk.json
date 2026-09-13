@@ -3,7 +3,7 @@
     "value": {
         "type": "minecraft:storage",
         "storage": "all:",
-        "path": "setting.activate.area"
+        "path": "setting.activate.bulk"
     },
     "test": 0
 }

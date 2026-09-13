@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:all_of",
+    "terms": [
+        "all_common:activate/player/area",
+        "all_common:activate/player/bulk"
+    ]
+}

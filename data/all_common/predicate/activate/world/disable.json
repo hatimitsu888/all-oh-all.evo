@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:all_of",
+    "terms": [
+        "all_common:activate/world/area",
+        "all_common:activate/world/bulk"
+    ]
+}

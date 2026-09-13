@@ -21,7 +21,7 @@ function all_common:settings/dialog/preset/set_color with storage all: setting.t
 $execute store result score #all.A all.math run data get storage all: pos_data.preset.$(preset).range
 
 #初期化
-data modify storage all: setting.tmp merge value {r2:"dark_gray",r3:"dark_gray",r4:"dark_gray",r5:"dark_gray",r6:"dark_gray",r7:"dark_gray",r8:"dark_gray",r9:"dark_gray",r10:"dark_gray",}
+data modify storage all: setting.tmp merge value {r2:"gray",r3:"gray",r4:"gray",r5:"gray",r6:"gray",r7:"gray",r8:"gray",r9:"gray",r10:"gray",}
 
 #色を設定
 execute if score #all.A all.math matches 2 run data modify storage all: setting.tmp merge value {r2:"green"}

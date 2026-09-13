@@ -2,13 +2,13 @@
 # ブロックを左クリックしたらブロックを特定する
 
 # 無効化されている場合は処理を行わない
-execute if predicate all_common:activate/world/ run return 0
+execute if predicate all_common:activate/world/tool run return 0
 
 #データ取得
 function all_common:data_get/
 
 # ユーザー設定により無効化されている場合は処理を行わない
-execute if predicate all_common:activate/player/ run return run data remove storage all: pos_data
+execute if predicate all_common:activate/player/tool run return run data remove storage all: pos_data
 
 #初期化
 # tool: mine=1b cut=2b dig=3b collect=4b shears=5b
