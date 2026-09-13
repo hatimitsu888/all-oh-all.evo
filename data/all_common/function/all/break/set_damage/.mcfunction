@@ -16,3 +16,6 @@ function all_common:all/break/set_damage/modify with storage all: tmp.damage
 
 #耐久値がゼロだったら壊す
 execute if predicate all_common:damage run function all_common:all/break/set_damage/break
+
+# リセット
+data remove storage all: tmp.damage

@@ -14,3 +14,6 @@ function all_common:settings/dialog/preset/preset_write with storage all: settin
 
 #開く
 function all_common:settings/dialog/preset/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

@@ -10,3 +10,6 @@ execute if score #all.auto_collect all.settings matches 1 run data modify storag
 
 # メニューを開く
 function all_common:settings/dialog/auto_collect/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

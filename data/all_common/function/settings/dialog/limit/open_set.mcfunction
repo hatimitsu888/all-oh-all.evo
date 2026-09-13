@@ -9,3 +9,6 @@ execute store result storage all: setting.tmp.value int 1 run scoreboard players
 
 # メニューを開く
 function all_common:settings/dialog/limit/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

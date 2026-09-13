@@ -22,3 +22,6 @@ execute if data storage all: {setting:{tools:{collect:true}}} run data modify st
 
 # メニューを開く
 function all_common:settings/dialog/tool_activate/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

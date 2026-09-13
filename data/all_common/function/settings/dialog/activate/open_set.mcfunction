@@ -12,3 +12,6 @@ execute if data storage all: {setting:{activate:{area:false}}} run data modify s
 
 # メニューを開く
 function all_common:settings/dialog/activate/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

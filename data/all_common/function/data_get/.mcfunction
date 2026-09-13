@@ -6,3 +6,6 @@ execute store result storage all: tmp.get.player_id int 1 run scoreboard players
 
 #プレイヤーのストレージを取り出す
 function all_common:data_get/data with storage all: tmp.get
+
+# リセット
+data remove storage all: tmp.get

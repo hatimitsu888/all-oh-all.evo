@@ -6,3 +6,6 @@ execute store result storage all: tmp.set.player_id int 1 run scoreboard players
 
 #プレイヤーのストレージを特定
 function all_common:data_set/data with storage all: tmp.set
+
+# リセット
+data remove storage all: tmp.set

@@ -11,3 +11,6 @@ execute if score @s all.preset_activate matches 0 run data modify storage all: s
 
 # メニューを開く
 function all_common:settings/dialog/preset_activate/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

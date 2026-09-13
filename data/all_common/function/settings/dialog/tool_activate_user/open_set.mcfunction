@@ -35,3 +35,6 @@ data remove storage all: pos_data
 
 # メニューを開く
 function all_common:settings/dialog/tool_activate_user/open with storage all: setting.tmp
+
+# リセット
+data remove storage all: setting.tmp

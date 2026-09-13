@@ -32,3 +32,4 @@ execute if data storage all: {pos_data:{facing: "ed"}} rotated -90 90 run functi
 #リセット
 scoreboard players reset #all.A all.math
 scoreboard players reset #all.B all.math
+data remove storage all: tmp.preset
