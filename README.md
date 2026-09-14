@@ -72,12 +72,12 @@
 ## プリセットの設定
 ユーザー用の設定画面から「**プリセットの変更**」を開くと、範囲採掘用のプリセット設定画面が出てきます。  
 ▼プリセット名の横の矢印を押すことでA、B、Cの三種類のプリセットを切り替えることができます。
-![プリセットの切り替え](/img/player_setting_preset_select.webp)  
+![プリセットの切り替え](/img/player_setting_preset_select.gif)  
 プリセットには「**奥行き**」と「**形**」を決めることができ、これは**範囲採掘**時に適用されます。  
 ▼奥行きは範囲採掘の際にどこまで深く掘るかを設定できます。  
-![プリセットの奥行き変更](/img/player_setting_preset_range.webp)  
+![プリセットの奥行き変更](/img/player_setting_preset_range.gif)  
 ▼「O」を中心(ツールで掘った位置)に、5×5マス範囲で掘られる形を決めることができます。  
-![プリセットの形変更](/img/player_setting_preset_shape.webp)  
+![プリセットの形変更](/img/player_setting_preset_shape.gif)  
 ※白色の「X」が採掘される場所となります。
 
 ## プリセットの切り替え
